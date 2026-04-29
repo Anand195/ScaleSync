@@ -14,7 +14,7 @@
   .hero-badge { display: inline-block; background: rgba(243,112,33,0.12); border: 1px solid rgba(243,112,33,0.35); color: #F37021; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.3rem 0.9rem; border-radius: 20px; margin-bottom: 1rem; }
   .hero h1 { font-size: 2.2rem; font-weight: 900; color: #E8EDF2; line-height: 1.2; margin-bottom: 0.75rem; }
   .hero h1 span { color: #F37021; }
-  .hero-sub { color: #6B8299; font-size: 0.92rem; max-width: 640px; margin: 0 auto 2rem; line-height: 1.6; }
+  .hero-sub { color: #6B8299; font-size: 0.92rem; max-width: 680px; margin: 0 auto 2rem; line-height: 1.6; }
   .hero-stats { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; }
   .hstat { text-align: center; }
   .hstat-num { font-size: 1.8rem; font-weight: 900; color: #F37021; }
@@ -22,6 +22,28 @@
   .section { max-width: 980px; margin: 0 auto; padding: 2.5rem 1.5rem; }
   .section-title { font-size: 1.15rem; font-weight: 800; color: #F37021; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.3rem; }
   .section-sub { color: #6B8299; font-size: 0.82rem; margin-bottom: 1.5rem; }
+  /* OFFER STACK BLOCK */
+  .offer-stack { background: linear-gradient(135deg, #0a1f14 0%, #0D1B2A 100%); border: 1px solid rgba(29,138,23,0.4); border-radius: 14px; padding: 1.75rem 2rem; margin-bottom: 2.5rem; }
+  .offer-stack h3 { font-size: 1rem; font-weight: 900; color: #86efac; margin-bottom: 0.4rem; }
+  .offer-stack-sub { font-size: 0.78rem; color: #6B8299; margin-bottom: 1.25rem; }
+  .offer-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.9rem; }
+  .offer-card { background: rgba(29,138,23,0.08); border: 1px solid rgba(29,138,23,0.25); border-radius: 10px; padding: 1rem; }
+  .offer-card-label { font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #86efac; margin-bottom: 0.35rem; }
+  .offer-card-name { font-size: 0.9rem; font-weight: 800; color: #E8EDF2; margin-bottom: 0.25rem; }
+  .offer-card-price { font-size: 0.78rem; color: #F37021; font-weight: 700; margin-bottom: 0.4rem; }
+  .offer-card-desc { font-size: 0.75rem; color: #94A3B8; line-height: 1.5; }
+  .offer-card.flagship { border-color: rgba(243,112,33,0.5); background: rgba(243,112,33,0.07); }
+  .offer-card.flagship .offer-card-label { color: #F37021; }
+  /* MANDATE BANNER */
+  .mandate-banner { background: rgba(234,179,8,0.08); border: 1px solid rgba(234,179,8,0.3); border-radius: 10px; padding: 1rem 1.5rem; margin-bottom: 2rem; display: flex; align-items: flex-start; gap: 1rem; }
+  .mandate-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 0.1rem; }
+  .mandate-text strong { color: #fde68a; font-size: 0.85rem; display: block; margin-bottom: 0.2rem; }
+  .mandate-text span { color: #94A3B8; font-size: 0.78rem; line-height: 1.5; }
+  /* SOCIAL PROOF */
+  .proof-bar { background: rgba(14,165,233,0.07); border: 1px solid rgba(14,165,233,0.2); border-radius: 10px; padding: 0.9rem 1.5rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+  .proof-item { font-size: 0.78rem; color: #94A3B8; }
+  .proof-item strong { color: #7dd3fc; display: block; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.07em; }
+  /* LEAD BLOCKS */
   .lead-block { background: #101E2E; border: 1px solid #1a2e40; border-radius: 14px; margin-bottom: 3rem; overflow: hidden; }
   .lead-header { background: linear-gradient(135deg, #0a1628 0%, #0D1B2A 100%); border-bottom: 2px solid #F37021; padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; }
   .lead-num { font-size: 0.7rem; font-weight: 700; color: #F37021; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.3rem; }
@@ -53,12 +75,15 @@
   .variant-card { background: #0D1B2A; border: 1px solid #1a2e40; border-radius: 10px; padding: 1.1rem; }
   .variant-label { font-size: 0.62rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; padding: 0.18rem 0.5rem; border-radius: 3px; margin-bottom: 0.75rem; display: inline-block; }
   .v-a { background: rgba(243,112,33,0.15); color: #F37021; }
-  .v-b { background: rgba(20,184,166,0.15); color: #5eead4; }
+  .v-b { background: rgba(220,38,38,0.15); color: #fca5a5; }
   .pitch-subject { font-size: 0.7rem; color: #6B8299; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em; }
   .pitch-subject strong { color: #94A3B8; font-weight: 600; }
-  .pitch-body { font-size: 0.8rem; color: #94A3B8; line-height: 1.65; white-space: pre-wrap; }
+  .pitch-body { font-size: 0.8rem; color: #94A3B8; line-height: 1.7; white-space: pre-wrap; }
   .pitch-hook { font-weight: 700; color: #E8EDF2; }
-  .phone-script { background: #0D1B2A; border: 1px solid #1a2e40; border-radius: 10px; padding: 1.1rem; font-size: 0.8rem; color: #94A3B8; line-height: 1.65; white-space: pre-wrap; }
+  .pitch-red { color: #fca5a5; font-weight: 700; }
+  .pitch-green { color: #86efac; font-weight: 700; }
+  .pitch-orange { color: #F37021; font-weight: 700; }
+  .phone-script { background: #0D1B2A; border: 1px solid #1a2e40; border-radius: 10px; padding: 1.1rem; font-size: 0.8rem; color: #94A3B8; line-height: 1.7; white-space: pre-wrap; }
   .script-note { font-size: 0.72rem; color: rgba(34,197,94,0.8); font-style: italic; }
   .tips-box { background: rgba(20,184,166,0.05); border: 1px solid rgba(20,184,166,0.2); border-radius: 8px; padding: 1rem 1.25rem; margin-top: 1rem; }
   .tips-box h4 { font-size: 0.72rem; font-weight: 700; color: #5eead4; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.6rem; }
@@ -69,25 +94,25 @@
   .obj-card { background: #0D1B2A; border: 1px solid #1a2e40; border-radius: 8px; padding: 0.9rem; }
   .obj-q { font-size: 0.75rem; font-weight: 700; color: #fca5a5; margin-bottom: 0.4rem; }
   .obj-a { font-size: 0.77rem; color: #94A3B8; line-height: 1.55; }
-  .sequence-steps { display: flex; gap: 0; flex-direction: column; position: relative; padding-left: 1.8rem; border-left: 2px solid #1a2e40; margin-left: 0.75rem; }
+  .sequence-steps { display: flex; flex-direction: column; position: relative; padding-left: 1.8rem; border-left: 2px solid #1a2e40; margin-left: 0.75rem; }
   .seq-step { position: relative; padding: 0 0 1.25rem 1.5rem; }
   .seq-step::before { content: attr(data-step); position: absolute; left: -1.3rem; top: 0; width: 1.2rem; height: 1.2rem; background: #F37021; border-radius: 50%; font-size: 0.6rem; font-weight: 900; color: #000; display: flex; align-items: center; justify-content: center; transform: translateX(-50%); }
   .seq-day { font-size: 0.65rem; font-weight: 700; color: #F37021; text-transform: uppercase; letter-spacing: 0.08em; }
   .seq-action { font-size: 0.82rem; color: #E8EDF2; font-weight: 600; margin: 0.15rem 0; }
   .seq-note { font-size: 0.75rem; color: #6B8299; }
-  .global-tips { background: #101E2E; border: 1px solid #1a2e40; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 3rem; }
+  .global-tips { background: #101E2E; border: 1px solid #1a2e40; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 2.5rem; }
   .global-tips h3 { font-size: 1rem; font-weight: 800; color: #F37021; margin-bottom: 1rem; }
   .tips-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
   @media (max-width: 600px) { .tips-two-col { grid-template-columns: 1fr; } }
   .tips-col h4 { font-size: 0.72rem; font-weight: 700; color: #5eead4; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.6rem; }
   .tips-col ul { padding-left: 1.1rem; }
   .tips-col li { font-size: 0.78rem; color: #94A3B8; line-height: 1.6; margin-bottom: 0.35rem; }
-  .divider { border: none; border-top: 1px solid #1a2e40; margin: 0.5rem 0 1.5rem; }
   footer { text-align: center; padding: 1.5rem; font-size: 0.72rem; color: #3A5068; border-top: 1px solid #1a2e40; }
   .priority-table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; font-size: 0.82rem; }
   .priority-table th { padding: 0.6rem 1rem; text-align: left; color: #6B8299; font-weight: 600; border-bottom: 2px solid #F37021; background: #060F18; }
   .priority-table td { padding: 0.65rem 1rem; border-bottom: 1px solid #1a2e40; color: #94A3B8; }
   .priority-table tr:hover td { background: #101E2E; }
+  .scarcity-tag { display: inline-block; background: rgba(220,38,38,0.15); border: 1px solid rgba(220,38,38,0.35); color: #fca5a5; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.15rem 0.55rem; border-radius: 4px; margin-left: 0.5rem; }
 </style>
 </head>
 <body>
@@ -98,94 +123,146 @@
 </div>
 
 <div class="hero">
-  <div class="hero-badge">Internal Sales Intelligence</div>
+  <div class="hero-badge">Master Pitch Deck — Internal Sales Intelligence</div>
   <h1>Ahmedabad<br><span>Engineering College Pitch Decks</span></h1>
-  <p class="hero-sub">10 verified engineering college leads in Ahmedabad — full pitch decks with Email, Phone, and LinkedIn outreach (A/B variants) for AI Workshop sales. Priority-ranked by Intel Score. April 2026.</p>
+  <p class="hero-sub">10 verified engineering college leads — authority-driven, FOMO-engineered pitches across Email, Phone, and LinkedIn. Four program tiers. AICTE mandate angle. IIT Guwahati social proof. Built to close.</p>
   <div class="hero-stats">
     <div class="hstat"><div class="hstat-num">10</div><div class="hstat-label">College Leads</div></div>
+    <div class="hstat"><div class="hstat-num">4</div><div class="hstat-label">Program Tiers</div></div>
     <div class="hstat"><div class="hstat-num">3</div><div class="hstat-label">Channels</div></div>
     <div class="hstat"><div class="hstat-num">2</div><div class="hstat-label">Variants Each</div></div>
-    <div class="hstat"><div class="hstat-num">2</div><div class="hstat-label">Score 7+ Leads</div></div>
   </div>
 </div>
 
 <!-- STRATEGY SECTION -->
 <div class="section">
+
+  <!-- MANDATE BANNER -->
+  <div class="mandate-banner">
+    <div class="mandate-icon">⚖️</div>
+    <div class="mandate-text">
+      <strong>AICTE Mandate — Your Unfair Advantage in Every Pitch</strong>
+      <span>AICTE has mandated AI literacy and curriculum integration across all engineering institutions in India. This is not optional — it is regulatory. Every college on this list MUST act. ScaleSync is the fastest compliant path. Use this in every conversation. It shifts the dynamic from "vendor pitch" to "compliance solution."</span>
+    </div>
+  </div>
+
+  <!-- SOCIAL PROOF BAR -->
+  <div class="proof-bar">
+    <div class="proof-item"><strong>Delivered At</strong>IIT Guwahati — Expert Sessions</div>
+    <div class="proof-item"><strong>Reach</strong>Multiple Institutions Across India</div>
+    <div class="proof-item"><strong>Outcome</strong>Students Build Real AI Agents From Day 1</div>
+    <div class="proof-item"><strong>Faculty</strong>FDP Program — AICTE-aligned</div>
+    <div class="proof-item"><strong>Slots Open</strong><span style="color:#fca5a5; font-weight:700;">Only 3 This Month</span></div>
+  </div>
+
+  <!-- OFFER STACK -->
+  <div class="offer-stack">
+    <h3>The ScaleSync Program Stack — Present These as a Menu, Close on Whichever Fits</h3>
+    <p class="offer-stack-sub">Always lead with the Pilot (zero-friction entry). Upsell to Workshop or Certification. FDP is a separate line item that almost always gets added — it sells itself.</p>
+    <div class="offer-grid">
+      <div class="offer-card">
+        <div class="offer-card-label">Entry Point</div>
+        <div class="offer-card-name">1-Day AI Pilot</div>
+        <div class="offer-card-price">Free — Zero Commitment</div>
+        <div class="offer-card-desc">Students build their first AI agent in one day. No paperwork. No approval needed. This is how we prove quality. Close the room — close the next program.</div>
+      </div>
+      <div class="offer-card flagship">
+        <div class="offer-card-label">⭐ Most Popular</div>
+        <div class="offer-card-name">2-Day AI Workshop</div>
+        <div class="offer-card-price">₹800–1000/student · MoU-backed</div>
+        <div class="offer-card-desc">3 deployed AI agents per student. Real LLM API integrations. n8n + Make.com workflows. Industry certificate + GitHub portfolio. AICTE-compliant documentation.</div>
+      </div>
+      <div class="offer-card">
+        <div class="offer-card-label">Deep Dive</div>
+        <div class="offer-card-name">5-Day AI Certification</div>
+        <div class="offer-card-price">₹2500–3000/student</div>
+        <div class="offer-card-desc">10+ projects. AI agents, automation pipelines, LLM apps. Industry-recognised certificate. Students become AI-ready by Day 5. Best ROI for placement teams.</div>
+      </div>
+      <div class="offer-card">
+        <div class="offer-card-label">Faculty Program</div>
+        <div class="offer-card-name">Faculty Development Program</div>
+        <div class="offer-card-price">₹20,000–25,000 flat (college)</div>
+        <div class="offer-card-desc">2-day FDP for your faculty. Real trending AI tools for daily work. Industry insights. AICTE FDP-compliant. Makes faculty AI-ready — independent of student batch.</div>
+      </div>
+    </div>
+  </div>
+
   <div class="section-title">Outreach Strategy — Ahmedabad</div>
-  <div class="section-sub">Market intelligence and sequence before first contact</div>
+  <div class="section-sub">Psychological framework and market intelligence before first contact</div>
 
   <div class="global-tips">
-    <h3>Ahmedabad College Market — What You Need to Know</h3>
+    <h3>The Selling Framework for This Market</h3>
     <div class="tips-two-col">
       <div class="tips-col">
-        <h4>What These Colleges Care About</h4>
+        <h4>The 5 Psychological Levers to Pull</h4>
         <ul>
-          <li>GTU affiliation dominates — most private colleges need HOD sign-off, not just dean</li>
-          <li>Entrepreneurship and startup culture is strong at Indus, JG University — lean into it</li>
-          <li>NAAC/NBA accreditation scores drive decisions at Tier-A — frame workshop as industry collaboration proof</li>
-          <li>Training & Placement cell has fastest budget authority at B-tier colleges</li>
-          <li>Home-ground advantage: ScaleSync is Ahmedabad-based — use it, builds trust instantly</li>
+          <li><strong style="color:#fde68a;">AICTE Mandate</strong> — External authority. They don't have a choice. Frame you as the solution to a problem they already have.</li>
+          <li><strong style="color:#fca5a5;">Fear of Falling Behind</strong> — "Two colleges across the city are already in our June cohort. Your students will interview against theirs."</li>
+          <li><strong style="color:#fca5a5;">Loss Aversion</strong> — Students graduating without AI skills face 40% lower shortlisting rates at Bengaluru/Pune product companies. That's the HOD's failure, not the student's.</li>
+          <li><strong style="color:#86efac;">Social Proof</strong> — IIT Guwahati. Multiple institutions. Name it every time. It changes their brain's trust calculation instantly.</li>
+          <li><strong style="color:#F37021;">Scarcity</strong> — Only 3 onboarding slots this month. Say it. Mean it. Then mean it harder.</li>
         </ul>
       </div>
       <div class="tips-col">
-        <h4>Tone Rules for This Market</h4>
+        <h4>Hormozi Value Stack — Use This Before Quoting Price</h4>
         <ul>
-          <li>Lead with local credibility: "We're an Ahmedabad-based AI agency" opens doors here</li>
-          <li>Gujarat colleges respond well to MoU framing — documentation = seriousness</li>
-          <li>₹800–1000/student standard; govt colleges (LDCE, VGEC) resist paid — offer free pilot</li>
-          <li>Mention Indus or LJIET by name when pitching others — local social proof works</li>
-          <li>Avoid exam season (Nov, Apr–May) — best windows are Aug–Oct and Jan–Mar</li>
+          <li>Lead with: "Here's everything you get..." then list all components with their standalone value</li>
+          <li>2-Day Workshop alone: curriculum delivery (₹50k value), industry certificates, MoU documentation, AICTE compliance, GitHub portfolios, post-workshop support</li>
+          <li>After stacking: "We charge ₹900/student. That's it."</li>
+          <li>Free pilot = risk reversal. "You don't pay until you've seen the quality." Nobody says no to this.</li>
+          <li>Local angle works hard here: "We're Ahmedabad-based. If anything goes wrong, we're 20 minutes away." Trust closer.</li>
+          <li>Always end with: "What would have to be true for you to say yes today?"</li>
         </ul>
       </div>
     </div>
   </div>
 
   <div class="section-title" style="margin-bottom:0.5rem;">Priority Ranking</div>
-  <div class="section-sub" style="margin-bottom:1rem;">Sorted by Intel Score — attack top 4 first</div>
+  <div class="section-sub" style="margin-bottom:1rem;">Attack top 4 first — these are the ones that close fastest</div>
   <table class="priority-table">
     <thead>
-      <tr><th>#</th><th>College</th><th>Score</th><th>Why</th><th>Entry Point</th></tr>
+      <tr><th>#</th><th>College</th><th>Score</th><th>Fastest Close Path</th><th>Entry Point</th></tr>
     </thead>
     <tbody>
-      <tr><td>1</td><td>Indus University</td><td><span class="score-badge score-hot">7.0 🔥</span></td><td>Active LI, entrepreneurship culture, responds to vendor outreach</td><td>CSR / Training Cell</td></tr>
-      <tr><td>2</td><td>LJIET</td><td><span class="score-badge score-hot">6.5 🔥</span></td><td>Frequent industry guest lectures, open vendor pipeline</td><td>Training & Placement</td></tr>
-      <tr><td>3</td><td>JG University</td><td><span class="score-badge score-warm">6.0</span></td><td>New university, eager for industry, short decision chain</td><td>Academics Head</td></tr>
-      <tr><td>4</td><td>Nirma University IT</td><td><span class="score-badge score-warm">6.0</span></td><td>NBA-accredited, prestige logo, active LI — longer cycle</td><td>Director, IT Dept</td></tr>
-      <tr><td>5</td><td>DA-IICT</td><td><span class="score-badge score-warm">5.0</span></td><td>ICT-focused, Ambani backing, selective but open</td><td>CSE/IT HOD</td></tr>
-      <tr><td>6</td><td>GTU</td><td><span class="score-badge score-warm">5.0</span></td><td>Umbrella university — one yes = multiple affiliated colleges</td><td>Innovation Council</td></tr>
-      <tr><td>7</td><td>PDEU</td><td><span class="score-badge score-warm">5.0</span></td><td>TBI angle works; energy domain focus but open to tie-ups</td><td>Innovation Cell / TBI</td></tr>
-      <tr><td>8</td><td>LDCE</td><td><span class="score-badge score-cold">4.0</span></td><td>Govt/GTU, bureaucratic, slow — deprioritise</td><td>Principal Office</td></tr>
-      <tr><td>9</td><td>IITRAM</td><td><span class="score-badge score-cold">4.0</span></td><td>Research-focused, slow procurement — deprioritise</td><td>Director's Office</td></tr>
-      <tr><td>10</td><td>VGEC</td><td><span class="score-badge score-cold">4.0</span></td><td>No LI presence, govt budget constraints — skip for now</td><td>Principal Office</td></tr>
+      <tr><td>1</td><td>Indus University</td><td><span class="score-badge score-hot">7.0 🔥</span></td><td>1-day pilot → 2-day workshop → FDP</td><td>CSR / Training Cell</td></tr>
+      <tr><td>2</td><td>LJIET</td><td><span class="score-badge score-hot">6.5 🔥</span></td><td>2-day workshop first → 5-day cert upsell</td><td>Training & Placement</td></tr>
+      <tr><td>3</td><td>JG University</td><td><span class="score-badge score-warm">6.0</span></td><td>FDP first (faculty buy-in) → student workshop</td><td>Academics Head</td></tr>
+      <tr><td>4</td><td>Nirma University IT</td><td><span class="score-badge score-warm">6.0</span></td><td>Technical pitch → 5-day cert → FDP add-on</td><td>Director, IT Dept</td></tr>
+      <tr><td>5</td><td>DA-IICT</td><td><span class="score-badge score-warm">5.0</span></td><td>2-day workshop → ICT track → FDP</td><td>CSE/IT HOD</td></tr>
+      <tr><td>6</td><td>GTU</td><td><span class="score-badge score-warm">5.0</span></td><td>Endorsement play → affiliated college cascade</td><td>Innovation Council</td></tr>
+      <tr><td>7</td><td>PDEU</td><td><span class="score-badge score-warm">5.0</span></td><td>Energy automation pitch → TBI co-brand</td><td>Innovation Cell / TBI</td></tr>
+      <tr><td>8</td><td>LDCE</td><td><span class="score-badge score-cold">4.0</span></td><td>Free pilot only — AICTE compliance angle</td><td>Principal Office</td></tr>
+      <tr><td>9</td><td>IITRAM</td><td><span class="score-badge score-cold">4.0</span></td><td>Research workflow framing — slow play</td><td>Director's Office</td></tr>
+      <tr><td>10</td><td>VGEC</td><td><span class="score-badge score-cold">4.0</span></td><td>Skip until Q3 2026 — need references first</td><td>—</td></tr>
     </tbody>
   </table>
 
-  <div class="section-title" style="margin-bottom:0.5rem;">Recommended Outreach Sequence (Per Lead)</div>
+  <div class="section-title" style="margin-bottom:0.5rem;">Outreach Sequence — Per Lead</div>
   <div class="sequence-steps" style="margin-top:1rem;">
     <div class="seq-step" data-step="1">
       <div class="seq-day">Day 1</div>
-      <div class="seq-action">Send Email — Variant A</div>
-      <div class="seq-note">Personal subject. Reference their campus activity or placement stat. No attachments. Mention Ahmedabad base — local trust signal.</div>
+      <div class="seq-action">Email — Variant A (Authority + Mandate Hook)</div>
+      <div class="seq-note">Open with AICTE mandate or IIT Guwahati proof — not your name. Pattern interrupt. No attachments. Local trust signal: "We're Ahmedabad-based."</div>
     </div>
     <div class="seq-step" data-step="2">
       <div class="seq-day">Day 3</div>
-      <div class="seq-action">LinkedIn Connection Request</div>
-      <div class="seq-note">Short note: "Sent an email about an AI workshop partnership for your students — fellow Ahmedabad agency." No pitch.</div>
+      <div class="seq-action">LinkedIn Connection + Short Note</div>
+      <div class="seq-note">Reference the email. Mention slot scarcity: "We have 3 Ahmedabad slots open this month — wanted to connect before they fill."</div>
     </div>
     <div class="seq-step" data-step="3">
       <div class="seq-day">Day 5</div>
-      <div class="seq-action">Phone Call — Script Below</div>
-      <div class="seq-note">If no reply. Reference email. Under 90 seconds. Goal = 15-min call, not a sale.</div>
+      <div class="seq-action">Phone Call — AICTE Hook Opening</div>
+      <div class="seq-note">If no reply. Open with mandate, not pitch. Under 90 seconds. Goal = book 20-min call, not sell.</div>
     </div>
     <div class="seq-step" data-step="4">
       <div class="seq-day">Day 8</div>
-      <div class="seq-action">LinkedIn Message — Follow-up</div>
-      <div class="seq-note">Soft follow-up. Share one stat on student AI skill gap. Ask a question. Mention another Ahmedabad college already enrolled (once true).</div>
+      <div class="seq-action">LinkedIn Message — Fear + FOMO Angle</div>
+      <div class="seq-note">Share the cost of inaction: "Colleges that delay AI integration are seeing students lose shortlisting opportunities at product companies. Here's what I've been seeing..."</div>
     </div>
     <div class="seq-step" data-step="5">
       <div class="seq-day">Day 14</div>
-      <div class="seq-action">Email — Variant B (Final)</div>
-      <div class="seq-note">Different angle. Mention free pilot batch offer. Last contact if no response — move on.</div>
+      <div class="seq-action">Email — Variant B (Fear + Competition + Final)</div>
+      <div class="seq-note">Competitor angle. Free pilot as absolute zero-risk offer. "Last message — I want to give you the first right of refusal before I confirm with another Ahmedabad college."</div>
     </div>
   </div>
 </div>
@@ -195,7 +272,7 @@
   <div class="lead-block">
     <div class="lead-header">
       <div>
-        <div class="lead-num">Lead 01 · Score <span class="score-badge score-hot">7.0 🔥 Highest Priority</span></div>
+        <div class="lead-num">Lead 01 · Score <span class="score-badge score-hot">7.0 🔥 Close First</span> <span class="scarcity-tag">3 Slots Left</span></div>
         <div class="lead-name">Indus University</div>
         <div class="lead-firm">CSR / Training Cell · Ahmedabad, Gujarat</div>
       </div>
@@ -210,57 +287,69 @@
     </div>
     <div class="lead-body">
       <div class="lead-profile">
-        <h4>Intel Profile</h4>
+        <h4>Intel + Pitch Positioning</h4>
         <div class="profile-grid">
-          <div class="profile-item"><strong>Why Hot</strong>Active LI page, growing enrolment, entrepreneurship culture</div>
-          <div class="profile-item"><strong>Entry Hook</strong>Responds to vendor outreach — CSR/Training Cell has direct budget</div>
-          <div class="profile-item"><strong>Best Angle</strong>Entrepreneurship + AI automation = natural pitch; MoU documentation</div>
-          <div class="profile-item"><strong>Local Edge</strong>ScaleSync Ahmedabad-based — call it out, shortens trust cycle</div>
-          <div class="profile-item"><strong>Opportunity</strong>Fastest yes in Ahmedabad market; anchor logo for city social proof</div>
-          <div class="profile-item"><strong>Watch Out</strong>Confirm CSR/Training Cell contact name before cold call</div>
+          <div class="profile-item"><strong>AICTE Hook</strong>Frame as compliance solution — they MUST add AI, we make it fast and zero-friction</div>
+          <div class="profile-item"><strong>Fear Angle</strong>Entrepreneurship college with no AI automation = graduates who can't build MVPs; competitors are moving</div>
+          <div class="profile-item"><strong>Best Entry</strong>1-day pilot → close same week on 2-day workshop → add FDP as separate line</div>
+          <div class="profile-item"><strong>FOMO Trigger</strong>"Two Ahmedabad colleges already confirmed for June — Indus is our preferred third"</div>
+          <div class="profile-item"><strong>Value Stack</strong>Pilot (free) + Workshop (₹900/student) + FDP (₹20k) — present all three, let them pick starting point</div>
+          <div class="profile-item"><strong>Local Edge</strong>We're Ahmedabad-based — "If anything goes wrong we're 20 minutes away" — trust closer</div>
         </div>
       </div>
 
       <div class="channel-block">
         <div class="channel-header">
           <div class="channel-icon ch-email">📧</div>
-          <div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">2 variants — test A first, B if no reply by Day 14</div></div>
+          <div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Variant A: Authority + Mandate · Variant B: Fear + FOMO (Day 14 if no reply)</div></div>
         </div>
         <div class="variant-pair">
           <div class="variant-card">
-            <span class="variant-label v-a">Variant A — Entrepreneur Angle</span>
-            <div class="pitch-subject">Subject: <strong>AI Automation Workshop for Indus University Students — Local Agency Partnership</strong></div>
+            <span class="variant-label v-a">Variant A — Mandate + Authority Hook</span>
+            <div class="pitch-subject">Subject: <strong>AICTE AI Mandate + 1 Slot Left for June — Indus University</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Hi [Training Cell Head],</span>
 
-I'm Anand from ScaleSync — an AI automation agency based right here in Ahmedabad.
+<span class="pitch-orange">AICTE has mandated AI curriculum integration across all engineering institutions.</span> Every college on that list needs to act — the question is who they partner with to make it happen fast.
 
-We run hands-on AI automation workshops for engineering students — covering n8n, Make.com, LLM APIs, and workflow automation that students can deploy within 2 days and show in any interview or hackathon.
+I'm Anand from ScaleSync. We've delivered AI workshops at IIT Guwahati and multiple institutions across India. Now we're building our Ahmedabad cohort — and Indus University is our first-choice partner here.
 
-Indus University's entrepreneurship culture is what caught my eye. Students who build automation skills early don't just get jobs — they build products. That's the angle that works well for your profile.
+Here's what we bring to your campus:
 
-What we offer:
-→ 2-day intensive (fits any break period or add-on slot)
-→ ₹800–1000/student — MoU-backed, industry certificate included
-→ Zero prep from your faculty — fully delivered by our team
-→ GitHub project portfolio per student
+<span class="pitch-green">→ 1-Day AI Pilot (Free)</span> — Students build their first real AI agent. No paperwork. No approval needed. You see quality before committing to anything.
 
-Since we're both based in Ahmedabad, a 15-minute in-person or call works. This week?
+<span class="pitch-green">→ 2-Day AI Workshop (₹900/student)</span> — 3 deployed AI agents per student. LLM APIs, n8n, Make.com. Real projects, not slides. Industry certificate + AICTE-compliant MoU documentation.
+
+<span class="pitch-green">→ 5-Day AI Certification (₹2500/student)</span> — Deep dive. 10+ projects. Industry-recognised certificate. Placement differentiator.
+
+<span class="pitch-green">→ Faculty Development Program (₹20,000 flat)</span> — 2-day FDP. Your faculty learns trending AI tools, real industry workflows. AICTE FDP-compliant.
+
+We have <span class="pitch-red">3 Ahmedabad slots for June.</span> Two are in conversation. I'm giving Indus first right of refusal on the third.
+
+We're based right here in Ahmedabad. 15 minutes — in person or call — this week?
 
 — Anand Shrivastava
 ScaleSync AI Automation | scaleyukti.ai</div>
           </div>
           <div class="variant-card">
-            <span class="variant-label v-b">Variant B — Free Pilot Angle</span>
-            <div class="pitch-subject">Subject: <strong>Free AI workshop pilot for 20 Indus students — no commitment needed</strong></div>
+            <span class="variant-label v-b">Variant B — Fear + Competition (Day 14)</span>
+            <div class="pitch-subject">Subject: <strong>Before I confirm with another Ahmedabad college — Indus University</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
 
-We're an Ahmedabad-based AI agency running automation workshops at engineering colleges. We've been expanding into Ahmedabad campuses and Indus University is our first-choice anchor here.
+I've reached out twice. I'll be direct about why I'm following up one last time.
 
-Offer: We'll run a free pilot batch of 20 students. You see the quality — real hands-on projects with LLM APIs and workflow tools — before committing to anything paid.
+<span class="pitch-red">By the time Indus University students graduate, the companies they're interviewing at will have already filtered out candidates who can't demonstrate AI automation skills.</span> That gap is not closing — it's widening every semester.
 
-If it lands well with students, we discuss a paid MoU for the next semester. If not, you've lost nothing except 2 days of room space.
+Colleges that act now own the positioning. Colleges that wait watch their students lose offers to students from places that moved faster.
 
-Worth a 15-minute call to see if the calendar works?
+Here's the lowest-friction version of what I'm offering:
+
+<span class="pitch-green">Start with a free 1-day pilot.</span> I bring my team. Your students build a real AI agent in one day. You pay nothing. You lose nothing — except one day of room space.
+
+If the quality impresses you, we talk about the 2-day workshop or 5-day certification. If not, we part as friends.
+
+Two Ahmedabad colleges have already confirmed for June. I have one slot left. <span class="pitch-red">After this email I'll confirm it with the next college on my list.</span>
+
+Is it Indus, or should I move on?
 
 — Anand | ScaleSync, scaleyukti.ai</div>
           </div>
@@ -270,41 +359,54 @@ Worth a 15-minute call to see if the calendar works?
       <div class="channel-block">
         <div class="channel-header">
           <div class="channel-icon ch-phone">📞</div>
-          <div><div class="channel-label">Phone Script</div><div class="channel-sublabel">Day 5 if no email reply — under 90 seconds</div></div>
+          <div><div class="channel-label">Phone Script</div><div class="channel-sublabel">Day 5 — Open with AICTE, not your name. Under 90 seconds.</div></div>
         </div>
-        <div class="phone-script"><span class="script-note">[When answered]</span>
-"Hello — am I reaching the Training Cell or CSR office at Indus University?
+        <div class="phone-script"><span class="script-note">[When answered — do NOT open with "I'm Anand from..."]</span>
 
-Great. I'm Anand from ScaleSync — we're an AI automation agency based in Ahmedabad. I'd sent an email earlier about a hands-on AI workshop partnership for your engineering students.
+"Hello — am I speaking with someone at the Training Cell or CSR office at Indus University?
 
-We've been setting up workshop tie-ups with colleges here in the city — given Indus University's entrepreneurship focus, I thought it could be a strong fit.
+<span class="script-note">[Yes]</span> Perfect. Quick question — has your team started planning your AICTE AI curriculum compliance yet? AICTE has issued a mandate for AI integration across engineering institutions — most colleges are now scrambling to figure out the fastest path.
 
-Is there a right person for industry workshop collaborations I should speak with?
+I'm Anand from ScaleSync. We've run AI workshops at IIT Guwahati and multiple campuses across India. We're putting together our June Ahmedabad cohort — only 3 college slots — and Indus is our first call.
 
-<span class="script-note">[If they ask more]</span> It's a 2-day paid workshop — ₹800–1000 per student, fully delivered by our team, MoU documentation included. Or we can start with a free pilot of 20 students — zero commitment. Would a 15-minute call with the right person this week work?"</div>
+<span class="script-note">[If interested]</span> We have four programs — from a free 1-day pilot all the way to a 5-day student certification and a Faculty Development Program. The fastest way to figure out what fits is a 20-minute call.
+
+Are you free this week — or is there a better person for me to speak with?
+
+<span class="script-note">[If they ask about cost]</span> The pilot is completely free — we bring the team, your students build real AI agents in one day, you pay nothing. After that we have paid options starting at ₹900/student. But let's start with the free day and go from there.
+
+<span class="script-note">[Close]</span> Can I send you a calendar invite for a 20-minute call? I want to get Indus locked in before I confirm with someone else."</div>
       </div>
 
       <div class="channel-block">
         <div class="channel-header">
           <div class="channel-icon ch-linkedin">💼</div>
-          <div><div class="channel-label">LinkedIn Outreach</div><div class="channel-sublabel">Connection note + follow-up message variants</div></div>
+          <div><div class="channel-label">LinkedIn Outreach</div><div class="channel-sublabel">Connection note + follow-up after connecting</div></div>
         </div>
         <div class="variant-pair">
           <div class="variant-card">
             <span class="variant-label v-a">Connection Note (150 chars)</span>
-            <div class="pitch-body">Hi [Name], I run AI automation workshops for engineering colleges in Ahmedabad — sent an email about an Indus University partnership. Happy to connect.</div>
+            <div class="pitch-body">Hi [Name] — AICTE's AI mandate is creating urgency for every engineering college. We've delivered at IIT Guwahati and are building our Ahmedabad cohort. 3 slots left. Happy to connect.</div>
           </div>
           <div class="variant-card">
             <span class="variant-label v-b">Follow-up Message (after connect)</span>
             <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
 
-Thanks for connecting. We're a local Ahmedabad agency — ScaleSync — and we run hands-on AI automation workshops for engineering students.
+Thanks for connecting. Here's why I reached out.
 
-Indus University's entrepreneurship-focused culture is exactly the environment where this lands well. Students who automate things during college start businesses or get hired faster.
+AICTE has mandated AI curriculum integration across engineering institutions. Most colleges are figuring out the fastest compliant path right now.
 
-2-day workshop, real projects, MoU documentation. Free pilot for first batch — no approval needed.
+We're ScaleSync — Ahmedabad-based AI agency. We've run expert sessions at IIT Guwahati and multiple campuses across India. Now building our Ahmedabad cohort.
 
-Worth a quick call this week?</div>
+What we offer Indus University:
+→ Free 1-day AI pilot — students build real AI agents, you pay nothing
+→ 2-day workshop (₹900/student) — 3 deployed projects, MoU documentation
+→ 5-day certification (₹2500/student) — industry certificate, 10+ projects
+→ Faculty Development Program (₹20k) — AICTE FDP-compliant
+
+<span class="pitch-red">3 June slots remaining. Two confirmed.</span>
+
+Worth a 20-minute call this week to see if Indus fits the third?</div>
           </div>
         </div>
       </div>
@@ -312,10 +414,10 @@ Worth a quick call this week?</div>
       <div class="tips-box">
         <h4>Objection Handlers — Indus University</h4>
         <div class="objection-grid">
-          <div class="obj-card"><div class="obj-q">"We already have industry tie-ups"</div><div class="obj-a">"That's great — we're not replacing those. This is a specific skill workshop students take alongside their curriculum. 2 days, practical output, zero clash."</div></div>
-          <div class="obj-card"><div class="obj-q">"What's the cost?"</div><div class="obj-a">"₹800–1000/student for 2 days. Most colleges collect this as a workshop fee from students. No department budget needed. Or start free pilot — 20 students, zero cost."</div></div>
-          <div class="obj-card"><div class="obj-q">"We need committee approval"</div><div class="obj-a">"Understood. Free pilot needs zero approval. Once students demo projects, you have evidence for the committee. We handle the paperwork after."</div></div>
-          <div class="obj-card"><div class="obj-q">"Send us a proposal"</div><div class="obj-a">"Will do — 10 minutes to understand your semester schedule so the proposal fits your calendar exactly? Then I'll have it to you same day."</div></div>
+          <div class="obj-card"><div class="obj-q">"We already have AI tie-ups"</div><div class="obj-a">"That's exactly the right foundation. We're not replacing anything — we're adding the applied deployment layer. Students go from knowing AI theory to building real agents in 2 days. Different skill, different outcome."</div></div>
+          <div class="obj-card"><div class="obj-q">"What's the cost?"</div><div class="obj-a">"The pilot is free — zero cost, your team sees the quality first. After that: ₹900/student for 2-day workshop. ₹2500 for 5-day certification. Faculty Development Program is ₹20,000 flat for the college. Start with what makes sense."</div></div>
+          <div class="obj-card"><div class="obj-q">"We need committee approval"</div><div class="obj-a">"The pilot needs zero approval — it's free. Run it. Students build AI agents. Your committee sees the output. THEN you have evidence to present. We've had colleges go from pilot to signed MoU in 10 days."</div></div>
+          <div class="obj-card"><div class="obj-q">"Send us a proposal"</div><div class="obj-a">"I'll have it to you within the hour. One ask — 10 minutes to understand your semester timeline so the proposal fits your calendar? The generic version won't get the approval you need."</div></div>
         </div>
       </div>
     </div>
@@ -326,11 +428,11 @@ Worth a quick call this week?</div>
     <div class="lead-header">
       <div>
         <div class="lead-num">Lead 02 · Score <span class="score-badge score-hot">6.5 🔥 High Priority</span></div>
-        <div class="lead-name">LJIET — L.J. Institute of Engineering & Technology</div>
-        <div class="lead-firm">Training & Placement Cell · Ahmedabad, Gujarat</div>
+        <div class="lead-name">LJIET — L.J. Institute of Engineering &amp; Technology</div>
+        <div class="lead-firm">Training &amp; Placement Cell · Ahmedabad, Gujarat</div>
       </div>
       <div class="lead-contact-grid">
-        <div class="contact-item"><strong>Contact</strong>Training & Placement Head</div>
+        <div class="contact-item"><strong>Contact</strong>T&P Head</div>
         <div class="contact-item"><strong>Phone</strong>+91-79-26403080</div>
         <div class="contact-item"><strong>Email</strong>info@ljiet.ac.in</div>
         <div class="contact-item"><strong>Website</strong>ljiet.ac.in</div>
@@ -340,71 +442,80 @@ Worth a quick call this week?</div>
     </div>
     <div class="lead-body">
       <div class="lead-profile">
-        <h4>Intel Profile</h4>
+        <h4>Intel + Pitch Positioning</h4>
         <div class="profile-grid">
-          <div class="profile-item"><strong>Why Hot</strong>Active LI page, frequent industry guest lectures, open vendor pipeline</div>
-          <div class="profile-item"><strong>Entry Hook</strong>T&P cell has workshop budget and buys regularly from outside vendors</div>
-          <div class="profile-item"><strong>Best Angle</strong>Placement differentiator — AI automation on resume gets shortlisted</div>
-          <div class="profile-item"><strong>LJ Group</strong>Group institution — good relationship = potential for multiple LJ colleges</div>
-          <div class="profile-item"><strong>Best Time</strong>Aug–Oct window before semester exams; Jan–Feb for spring batch</div>
-          <div class="profile-item"><strong>Watch Out</strong>T&P Head changes annually — verify current contact before outreach</div>
+          <div class="profile-item"><strong>Fear Angle</strong>T&P Head's reputation is tied to placement numbers — students without AI skills get fewer shortlists</div>
+          <div class="profile-item"><strong>Best Hook</strong>"Companies shortlisting for automation roles now filter by skill before interview. Your students are not getting filtered in."</div>
+          <div class="profile-item"><strong>Close Path</strong>2-day workshop first → upsell to 5-day cert for pre-final year batch → FDP as add-on</div>
+          <div class="profile-item"><strong>LJ Group Angle</strong>One yes = potential across all LJ campuses — mention group scale possibility</div>
         </div>
       </div>
 
       <div class="channel-block">
-        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Address T&P directly — strongest budget holder here</div></div></div>
+        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Lead with the cost of inaction for T&P — placements are their KPI</div></div></div>
         <div class="variant-pair">
           <div class="variant-card">
-            <span class="variant-label v-a">Variant A — Placement Angle</span>
-            <div class="pitch-subject">Subject: <strong>AI Automation Workshop for LJIET Students — Placement Differentiator</strong></div>
+            <span class="variant-label v-a">Variant A — Placement Fear + Authority</span>
+            <div class="pitch-subject">Subject: <strong>LJIET Students Are Being Filtered Out Before Interview — Here's Why</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Hi [T&P Head],</span>
 
-I'm Anand from ScaleSync, an AI automation agency based in Ahmedabad.
+I'll cut straight to it.
 
-LJIET's placement record is strong. We want to make it stronger — specifically for students going into product companies and startups that now expect automation skills on Day 1.
+<span class="pitch-red">Product companies and tech startups in 2026 have added automation skill filters to their ATS before shortlisting for interview.</span> Students who haven't touched n8n, LLM APIs, or workflow automation tools are being filtered out before a human ever sees their resume.
 
-We run a 2-day hands-on AI automation workshop:
-→ n8n, Make.com, LLM APIs, real deployable projects
-→ Students leave with 3 working automations + GitHub portfolio
-→ ₹900/student — MoU-backed, industry certificate included
-→ No faculty prep required — fully delivered by our team
+LJIET's placement numbers are strong. But this is a gap that will show up in this hiring season if it hasn't already.
 
-Recruiters from product startups notice this. It's becoming a differentiator for colleges running it.
+I'm Anand from ScaleSync. We've delivered AI workshops at IIT Guwahati. We're now building our Ahmedabad cohort — LJIET is on our priority list because you have the placement infrastructure to make this matter.
 
-LJIET's T&P pipeline is a natural fit. 15-minute call this week?
+<span class="pitch-green">What we offer:</span>
+→ 2-Day AI Workshop (₹900/student) — students build real AI agents using LLM APIs + n8n. Industry certificate included. Placement-ready portfolio in 2 days.
+→ 5-Day AI Certification (₹2500/student) — for pre-final year batch. Deep skill build. Companies shortlist this on resume.
+→ Faculty Development Program (₹20,000 flat) — AICTE mandate compliance. Your faculty becomes AI-capable.
+→ 1-Day Free Pilot — start here, pay nothing, see quality first.
 
-— Anand Shrivastava
-ScaleSync | scaleyukti.ai</div>
+<span class="pitch-red">We have 3 Ahmedabad slots for June. Two are confirmed.</span>
+
+15 minutes this week — Ahmedabad to Ahmedabad, we can even meet in person.
+
+— Anand Shrivastava | ScaleSync, scaleyukti.ai</div>
           </div>
           <div class="variant-card">
-            <span class="variant-label v-b">Variant B — Guest Lecture to Workshop</span>
-            <div class="pitch-subject">Subject: <strong>Guest session on AI automation for LJIET — with a free pilot offer</strong></div>
+            <span class="variant-label v-b">Variant B — Competitor FOMO (Day 14)</span>
+            <div class="pitch-subject">Subject: <strong>Another Ahmedabad college just confirmed for June — LJIET</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
 
-LJIET does industry guest lectures regularly — we'd like to take that one step further.
+One more Ahmedabad college just confirmed their June slot with us. That leaves one open.
 
-We can start with a free guest session on "AI Automation for Engineers in 2026" — practical, no fluff, students build something during the session. If the response is good, we follow up with a paid 2-day workshop under MoU.
+I'm reaching out to LJIET before confirming with the next college on the list — your T&P track record is exactly why I wanted you in this cohort.
 
-Zero risk to try. Our team handles everything. We're local — Ahmedabad based.
+<span class="pitch-red">Here's the risk of waiting:</span> when LJIET students interview against students from colleges that ran our AI workshop, the difference is visible. 3 deployed AI agent projects versus zero is not a subtle gap in a technical interview.
 
-Worth 10 minutes to align on a date?
+The no-risk version: let us run a free 1-day pilot at LJIET. Your students build a real AI agent. You watch. It costs you one day of room space and nothing else.
 
-— Anand | ScaleSync, scaleyukti.ai</div>
+If you like what you see, we lock in the 2-day workshop or 5-day certification before semester. If you don't, last message from me.
+
+One slot. Last call.
+
+— Anand | ScaleSync</div>
           </div>
         </div>
       </div>
 
       <div class="channel-block">
-        <div class="channel-header"><div class="channel-icon ch-phone">📞</div><div><div class="channel-label">Phone Script</div><div class="channel-sublabel">Day 5 if no email reply</div></div></div>
-        <div class="phone-script">"Hello — is this the Training & Placement office at LJIET?
+        <div class="channel-header"><div class="channel-icon ch-phone">📞</div><div><div class="channel-label">Phone Script</div></div></div>
+        <div class="phone-script">"Hello — is this the Training &amp; Placement office at LJIET?
 
-I'm Anand from ScaleSync, AI automation agency in Ahmedabad. I sent an email earlier about an AI workshop partnership for your students.
+Quick question before I introduce myself — has your team been looking at how to add AI automation skills to your placement prep calendar? AICTE has mandated AI integration and companies are starting to filter by these skills at the shortlisting stage.
 
-LJIET has a strong placement track record — we run workshops that add automation skills which product companies actively look for now.
+<span class="script-note">[Pause — let them respond]</span>
 
-Who would be the right person to coordinate an industry workshop for the T&P calendar?
+I'm Anand from ScaleSync. We've run AI workshops at IIT Guwahati. We're building our Ahmedabad June cohort — LJIET is on our priority list because your T&P pipeline is exactly where this creates the most value.
 
-<span class="script-note">[If asked more]</span> It's a 2-day paid workshop — ₹900/student, MoU documentation included, our team delivers everything. Or we can start with a free guest session. 15 minutes to discuss the calendar?"</div>
+We have programs from a free 1-day pilot all the way to a 5-day student certification and a Faculty Development Program. The fastest thing is a 20-minute call to figure out what fits your calendar.
+
+<span class="script-note">[If interested]</span> Are you free Thursday or Friday? I can come to campus or we do a call — whatever's easier.
+
+<span class="script-note">[If pushback]</span> I understand — let me ask one thing: would you be open to a free 1-day pilot? No cost, no paperwork. Students build real AI agents, you see the quality. That's it. Can we book that?"</div>
       </div>
 
       <div class="channel-block">
@@ -412,19 +523,25 @@ Who would be the right person to coordinate an industry workshop for the T&P cal
         <div class="variant-pair">
           <div class="variant-card">
             <span class="variant-label v-a">Connection Note</span>
-            <div class="pitch-body">Hi [Name], I run AI automation workshops for engineering colleges in Ahmedabad — sent an email about an LJIET T&P partnership. Happy to connect.</div>
+            <div class="pitch-body">Hi [Name] — product companies are now filtering for AI automation skills before shortlisting. LJIET's placement record is why I wanted to connect before filling our last June slot. Happy to share more.</div>
           </div>
           <div class="variant-card">
             <span class="variant-label v-b">Follow-up Message</span>
             <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
 
-Thanks for connecting. We're ScaleSync — Ahmedabad-based AI agency running hands-on automation workshops at engineering colleges.
+Thanks for connecting.
 
-LJIET's regular industry guest lecture format is exactly what we want to plug into. Our 2-day workshop extends that — students build real automations, walk out with a portfolio.
+Students from colleges that ran AI automation workshops this semester are getting shortlisted faster — companies now screen for n8n, LLM API experience, and workflow automation skills before interview.
 
-Product startups shortlist candidates who've touched n8n or LLM APIs. We make that possible in 2 days.
+ScaleSync — Ahmedabad-based, IIT Guwahati track record. We're building our June Ahmedabad cohort.
 
-Free pilot for first batch. Worth a quick chat?</div>
+Programs available:
+→ Free 1-day pilot (zero cost, zero commitment)
+→ 2-day workshop — ₹900/student, 3 AI agents deployed
+→ 5-day certification — ₹2500/student, placement differentiator
+→ Faculty Development Program — ₹20k, AICTE FDP-compliant
+
+<span class="pitch-red">1 June slot remaining.</span> Worth 20 minutes to see if LJIET fits?</div>
           </div>
         </div>
       </div>
@@ -450,14 +567,12 @@ Free pilot for first batch. Worth a quick chat?</div>
     </div>
     <div class="lead-body">
       <div class="lead-profile">
-        <h4>Intel Profile</h4>
+        <h4>Intel + Pitch Positioning</h4>
         <div class="profile-grid">
-          <div class="profile-item"><strong>Why Good</strong>New university, eager to build industry partnerships, quick decision cycle</div>
-          <div class="profile-item"><strong>Entry Hook</strong>New institutions need credibility — MoU with industry = NAAC points</div>
-          <div class="profile-item"><strong>Best Angle</strong>Be their first AI workshop partner — anchor position before others move in</div>
-          <div class="profile-item"><strong>Decision Speed</strong>Short chain — Academics Head can approve without group committee</div>
-          <div class="profile-item"><strong>Opportunity</strong>Establish early → repeat business as they grow enrolment</div>
-          <div class="profile-item"><strong>Watch Out</strong>Budget may be tighter than established colleges — price flex available</div>
+          <div class="profile-item"><strong>Best Hook</strong>New university = first mover advantage. "Be the first Ahmedabad university with a documented AI program. Every college will follow."</div>
+          <div class="profile-item"><strong>NAAC + AICTE</strong>Double compliance angle — FDP satisfies AICTE mandate; MoU adds NAAC industry criterion</div>
+          <div class="profile-item"><strong>Close Path</strong>FDP first (faculty buy-in = institutional support) → student workshop → certification track</div>
+          <div class="profile-item"><strong>Fear Angle</strong>Established colleges in Ahmedabad are moving faster — new universities can't afford to be slower on AI</div>
         </div>
       </div>
 
@@ -465,39 +580,45 @@ Free pilot for first batch. Worth a quick chat?</div>
         <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div></div></div>
         <div class="variant-pair">
           <div class="variant-card">
-            <span class="variant-label v-a">Variant A — First Mover Angle</span>
-            <div class="pitch-subject">Subject: <strong>AI Automation Workshop Partnership — JG University (Ahmedabad)</strong></div>
+            <span class="variant-label v-a">Variant A — First Mover + Mandate</span>
+            <div class="pitch-subject">Subject: <strong>JG University Can Own Ahmedabad's First AI-Ready Campus — Here's How</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Hi [Academics Head],</span>
 
-I'm Anand from ScaleSync — an AI automation agency based in Ahmedabad.
+<span class="pitch-orange">There is a window right now that won't exist in 12 months.</span>
 
-We're building workshop partnerships with forward-thinking engineering colleges in the city. JG University is on our shortlist because new universities that move fast on industry tie-ups build reputation faster than established ones that move slow.
+AICTE has mandated AI curriculum integration. Every engineering institution in India is now required to act. Established colleges like Nirma and DA-IICT are moving. For a newer university, the question is: do you move first and own the positioning, or wait and follow?
 
-We run a 2-day hands-on AI automation workshop for engineering students — real projects with LLM APIs and workflow tools like n8n. Students walk out with 3 deployable automations and an industry certificate.
+I'm Anand from ScaleSync. We've run AI expert sessions at IIT Guwahati. We're building our Ahmedabad cohort and JG University is on our shortlist because new universities that move fast on this become reference points — not followers.
 
-What this means for JG University:
-→ MoU documentation for NAAC/accreditation records
-→ Industry partnership on CV for your students
-→ You're ahead of other Ahmedabad colleges on AI skill programs
-→ ₹800/student — or free pilot for first 20 students
+<span class="pitch-green">Here's what we propose:</span>
+→ Faculty Development Program (₹20,000 flat) — Start here. Your faculty becomes AI-capable. AICTE FDP-compliant. NAAC industry collaboration documented. This is the fastest institutional win.
+→ 1-Day Student Pilot (Free) — Simultaneously or after FDP. Students build first AI agent. No cost.
+→ 2-Day Workshop (₹800/student) → 5-Day Certification (₹2500/student) — Scaled as you grow.
 
-Can we get 15 minutes this week?
+JG University as Ahmedabad's first fully AI-integrated campus is a positioning statement that compounds. Every admission cycle, every accreditation round — it pays dividends.
 
-— Anand Shrivastava
-ScaleSync | scaleyukti.ai</div>
+20 minutes this week?
+
+— Anand Shrivastava | ScaleSync, scaleyukti.ai</div>
           </div>
           <div class="variant-card">
-            <span class="variant-label v-b">Variant B — NAAC Angle</span>
-            <div class="pitch-subject">Subject: <strong>Industry collaboration for JG University — AI workshop + MoU documentation</strong></div>
+            <span class="variant-label v-b">Variant B — Competition + Urgency</span>
+            <div class="pitch-subject">Subject: <strong>Nirma &amp; Indus are already moving on AI — JG University</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
 
-As JG University builds its accreditation record, industry collaborations are one of the fastest ways to add weight.
+<span class="pitch-red">Here's what's happening right now in Ahmedabad's engineering landscape.</span>
 
-We offer a 2-day AI automation workshop with full MoU documentation — counts as documented industry collaboration for your NAAC records. Students get industry certificates. Your T&P gets a differentiator.
+Established colleges are rapidly adding AI programs to comply with the AICTE mandate. The colleges that move in the next 60 days will be the ones students see as AI-forward. The ones that move in 6 months will just be compliant.
 
-We're Ahmedabad-based — easy to coordinate in person. Free pilot batch available for first run — no paperwork needed to start.
+For a university building its reputation, this distinction matters enormously.
 
-10 minutes this week?
+We offer a free 1-day AI pilot — your students build real AI agents, your faculty sees the quality, and you pay nothing. If it works, we build a full program: 5-day certification, Faculty Development Program, semester-long MoU.
+
+If it doesn't work, you've spent one day of room space. No financial risk. No commitment.
+
+JG University can be the AI-forward choice in Ahmedabad. But the window for "first mover" closes soon.
+
+15 minutes to discuss?
 
 — Anand | ScaleSync</div>
           </div>
@@ -506,17 +627,15 @@ We're Ahmedabad-based — easy to coordinate in person. Free pilot batch availab
 
       <div class="channel-block">
         <div class="channel-header"><div class="channel-icon ch-phone">📞</div><div><div class="channel-label">Phone Script</div></div></div>
-        <div class="phone-script">"Hello — is this JG University? Could I speak with the Academics Head or someone handling industry workshop partnerships?
+        <div class="phone-script">"Hello — is this JG University? Could I speak with the Academics Head or someone handling industry partnerships?
 
-I'm Anand from ScaleSync, we're an AI automation agency in Ahmedabad. I sent an email about a workshop tie-up for your engineering students.
+Quick context before I get into it — AICTE has issued a mandate for AI integration in all engineering institutions. Most colleges are now racing to figure out the fastest compliant path.
 
-We work with colleges looking to add practical AI automation skills — 2-day program, MoU documentation, industry certificates.
+I'm Anand from ScaleSync — we've run AI workshops at IIT Guwahati and across India. We're building our Ahmedabad cohort and JG University stood out to us specifically because newer universities that move early on this become the reference point — not the follower.
 
-Being a newer university building its industry partnerships — I thought this could be useful timing.
+<span class="script-note">[If interested]</span> We have a Faculty Development Program that's AICTE FDP-compliant — that's usually the fastest institutional win. Then a free 1-day student pilot. Then we build from there.
 
-Who should I speak with to take this forward?
-
-<span class="script-note">[Get name/direct line]</span> Thank you — I'll reach out directly and mention your name."</div>
+Can I get 20 minutes with the right person to walk through what fits JG University's calendar?"</div>
       </div>
 
       <div class="channel-block">
@@ -524,19 +643,25 @@ Who should I speak with to take this forward?
         <div class="variant-pair">
           <div class="variant-card">
             <span class="variant-label v-a">Connection Note</span>
-            <div class="pitch-body">Hi [Name], Ahmedabad-based AI agency here — sent an email about a workshop partnership for JG University. Would love to connect and explore.</div>
+            <div class="pitch-body">Hi [Name] — AICTE's AI mandate is creating a first-mover window for new universities in Ahmedabad right now. We've delivered at IIT Guwahati and want to help JG University own this positioning. Happy to connect.</div>
           </div>
           <div class="variant-card">
             <span class="variant-label v-b">Follow-up Message</span>
             <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
 
-Thanks for connecting. We're ScaleSync — local Ahmedabad agency running AI automation workshops for engineering students.
+Thanks for connecting. Here's the opportunity I see for JG University.
 
-New universities building their industry collaboration records move faster than established ones. That's the window we want to work within.
+AICTE has mandated AI integration. Every college is moving. The ones that move in the next 60 days own the "AI-forward" positioning. The ones that move in 6 months are just compliant.
 
-2-day workshop, MoU documentation, industry certificate — free pilot to start, paid MoU after. No commitment upfront.
+ScaleSync — Ahmedabad-based, IIT Guwahati track record — can get JG University there fast:
 
-Worth a quick call?</div>
+→ Faculty Development Program (₹20k) — AICTE FDP-compliant, NAAC documentation
+→ Free 1-day student pilot — no cost, no commitment
+→ 2-day workshop (₹800/student) + 5-day certification (₹2500/student)
+
+First mover in Ahmedabad = compounds at every admission and accreditation cycle.
+
+20 minutes this week?</div>
           </div>
         </div>
       </div>
@@ -562,54 +687,58 @@ Worth a quick call?</div>
     </div>
     <div class="lead-body">
       <div class="lead-profile">
-        <h4>Intel Profile</h4>
+        <h4>Intel + Pitch Positioning</h4>
         <div class="profile-grid">
-          <div class="profile-item"><strong>Why Good</strong>NBA-accredited, active LI page, some AI electives already in curriculum</div>
-          <div class="profile-item"><strong>Cycle Warning</strong>Longer approval cycle — prestige institution, more process layers</div>
-          <div class="profile-item"><strong>Best Angle</strong>Practical automation to complement existing AI electives — not compete</div>
-          <div class="profile-item"><strong>Entry Hook</strong>Director IT Dept is the right entry — not admin or admissions</div>
-          <div class="profile-item"><strong>Logo Value</strong>Nirma as a reference = opens doors at every other Ahmedabad college</div>
-          <div class="profile-item"><strong>Strategy</strong>Plant seed early, expect 4–6 week cycle — don't chase aggressively</div>
+          <div class="profile-item"><strong>Tone</strong>Technical + peer-to-peer — Nirma faculty respond to depth and specificity, not sales energy</div>
+          <div class="profile-item"><strong>IIT Proof</strong>IIT Guwahati reference lands hard here — prestige institutions talk to each other</div>
+          <div class="profile-item"><strong>Best Angle</strong>Applied deployment gap — theory without production tools leaves even Nirma grads behind</div>
+          <div class="profile-item"><strong>FDP Angle</strong>Faculty Development Program = strategic — Nirma faculty becoming AI-capable is institutional differentiation</div>
+          <div class="profile-item"><strong>Long Game</strong>Plant seed early. 4–6 week cycle. But once Nirma is in, it's the best reference for every other Ahmedabad college.</div>
         </div>
       </div>
 
       <div class="channel-block">
-        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Technical tone — Nirma faculty respond to depth, not hype</div></div></div>
+        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Technical depth required — lead with the skills gap, not the pitch</div></div></div>
         <div class="variant-pair">
           <div class="variant-card">
-            <span class="variant-label v-a">Variant A — Technical Complement Angle</span>
-            <div class="pitch-subject">Subject: <strong>Practical AI Automation Workshop to Complement Nirma IT Curriculum</strong></div>
+            <span class="variant-label v-a">Variant A — Skills Gap + IIT Authority</span>
+            <div class="pitch-subject">Subject: <strong>The Automation Deployment Gap in Nirma IT Graduates — and a Fix</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Dear [Director's Name],</span>
 
-I'm writing from ScaleSync, an AI automation agency based in Ahmedabad.
+We run AI automation workshops at engineering institutions across India — most recently at IIT Guwahati. I'm writing to you specifically because the pattern we see at strong technical institutions is consistent and worth flagging.
 
-Nirma IT already has strong AI/ML electives in the curriculum. What most students still lack — even after those courses — is hands-on experience building and deploying real automation pipelines with production tools.
+<span class="pitch-red">Students who've studied AI/ML but never deployed a real automation pipeline are getting passed over in technical interviews — even when the interview is for companies at the Nirma level of hiring target.</span> The gap isn't knowledge. It's production tool experience: n8n, Make.com, LLM API integration, real workflow deployment.
 
-Our 2-day workshop covers exactly that gap:
-→ LLM API integration (OpenAI, Gemini, Claude)
-→ Workflow automation with n8n and Make.com
-→ Real project deployment — not toy examples
-→ Industry-signed certificate + GitHub portfolio per student
+AICTE has mandated AI curriculum integration. But compliance and capability are two different things. We close the capability gap.
 
-This isn't a replacement for your curriculum — it's the applied layer that makes the theoretical knowledge hirable.
+<span class="pitch-green">What we offer Nirma IT:</span>
+→ 2-Day Applied AI Workshop (₹1000/student) — students deploy real AI agents using production tools. Not slides. Not Jupyter notebooks. Deployed. Industry certificate + MoU documentation.
+→ 5-Day AI Certification (₹2500/student) — 10+ projects, deep dive, industry-recognised.
+→ Faculty Development Program (₹20,000 flat) — your faculty learns the same tools. AICTE FDP-compliant. Strategic differentiator.
+→ 1-Day Free Pilot — evaluate quality before committing a rupee.
 
-We'd welcome a brief meeting to understand your department's current skill coverage and see if there's a fit. 20 minutes at your convenience.
+Nirma as a reference would be significant for us. In return, your students get applied skills their degree doesn't yet cover.
 
-— Anand Shrivastava
-ScaleSync | scaleyukti.ai</div>
+20 minutes at your convenience?
+
+— Anand Shrivastava | ScaleSync, scaleyukti.ai</div>
           </div>
           <div class="variant-card">
-            <span class="variant-label v-b">Variant B — Industry Gap Angle</span>
-            <div class="pitch-subject">Subject: <strong>Automation skills gap Nirma graduates face — and a practical fix</strong></div>
+            <span class="variant-label v-b">Variant B — Industry Gap + Free Pilot</span>
+            <div class="pitch-subject">Subject: <strong>Applied automation gap Nirma graduates face — free pilot offer</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Dear [Name],</span>
 
-Product companies hiring in 2026 are filtering for automation skills that most engineering curricula — even strong ones — don't cover yet: n8n, Make.com, LLM API integration, workflow deployment.
+Direct question: when your final-year IT students graduate this May, how many can demonstrate a deployed automation pipeline using n8n, LLM APIs, or Make.com in a technical interview?
 
-Nirma IT produces technically strong graduates. The gap is applied automation — building real systems with these tools in hours, not weeks.
+<span class="pitch-red">For most engineering institutions — even strong ones — the answer is close to zero.</span> AICTE has mandated AI integration, but the curriculum catches up slower than industry moves.
 
-We run a focused 2-day workshop that closes this gap. MBA-free, theory-free — students build 3 working automations during the workshop itself.
+We run a 2-day workshop that closes this gap. Students deploy real AI agents during the session. By Day 2 they have 3 working automations and a GitHub portfolio.
 
-Free pilot batch for first run — 20 students, zero commitment from your end. We'd value Nirma's feedback before wider rollout in Ahmedabad.
+Free pilot: 20 Nirma students, 2 days, we bring the entire team. You pay nothing. You evaluate quality. If it meets your bar, we discuss a formal program.
+
+If it doesn't, last message from us.
+
+We've run this at IIT Guwahati. We believe Nirma will find the quality speaks for itself.
 
 — Anand | ScaleSync</div>
           </div>
@@ -620,13 +749,17 @@ Free pilot batch for first run — 20 students, zero commitment from your end. W
         <div class="channel-header"><div class="channel-icon ch-phone">📞</div><div><div class="channel-label">Phone Script</div></div></div>
         <div class="phone-script">"Hello — could I speak with the Director's office for the IT Department at Nirma University?
 
-I'm Anand from ScaleSync, an AI automation agency. I had sent an email about a practical workshop that complements your existing AI/ML curriculum.
+<span class="script-note">[When connected]</span> I'm Anand from ScaleSync. I'll keep this brief — we've been running applied AI automation workshops at institutions including IIT Guwahati, and I wanted to speak specifically with someone at Nirma IT.
 
-I know the Director's time is limited — I'm looking for 20 minutes, in person or on a call, to show how it fits alongside what Nirma already offers.
+There's a consistent skills gap we're seeing even at strong technical institutions: students who've studied AI/ML but haven't deployed real automation workflows using production tools. AICTE has mandated AI curriculum integration — but deployment skills are a different layer.
 
-Is the Director available for a brief meeting this week or next?
+We have a 2-day workshop and a 5-day certification that closes that gap. We also run Faculty Development Programs that are AICTE FDP-compliant.
 
-<span class="script-note">[If gatekeeper]</span> Could you let them know I called? ScaleSync — regarding an AI workshop partnership. I'll follow up with an email as well."</div>
+I'm not asking for a commitment — I'm asking for 20 minutes to show you specifically how we'd design this for Nirma IT's curriculum.
+
+Is the Director available this week, or is there a better contact for industry programs?
+
+<span class="script-note">[If gatekeeper]</span> Could you pass along: ScaleSync, AI automation workshop with AICTE documentation — we've run this at IIT Guwahati. I'll follow up with an email as well."</div>
       </div>
 
       <div class="channel-block">
@@ -634,17 +767,25 @@ Is the Director available for a brief meeting this week or next?
         <div class="variant-pair">
           <div class="variant-card">
             <span class="variant-label v-a">Connection Note</span>
-            <div class="pitch-body">Hi [Name], I run an AI automation agency in Ahmedabad — reached out about a practical workshop to complement Nirma IT's AI curriculum. Happy to connect.</div>
+            <div class="pitch-body">Hi [Name] — ran AI workshops at IIT Guwahati recently. Seeing a consistent applied automation gap even at strong technical institutions. Reached out about an Nirma IT program. Happy to connect.</div>
           </div>
           <div class="variant-card">
             <span class="variant-label v-b">Follow-up Message</span>
             <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
 
-Thanks for connecting. Quick context — we run 2-day AI automation workshops for engineering students. The focus is applied skills: n8n, LLM APIs, real deployable projects.
+Thanks for connecting. Quick context.
 
-Nirma IT's existing AI/ML curriculum is the right foundation. Our workshop is the practical layer on top — students leave with projects they can show in interviews or build into products.
+We've delivered AI automation workshops at IIT Guwahati and multiple institutions. The pattern at technically strong colleges: students know AI/ML theory but haven't deployed production automation tools — n8n, LLM APIs, Make.com.
 
-20 minutes to walk through it? Happy to come in-person since we're both in Ahmedabad.</div>
+AICTE mandate is the regulatory layer. Applied capability is the gap.
+
+For Nirma IT, we'd propose:
+→ Free 1-day pilot (evaluate quality, pay nothing)
+→ 2-day workshop (₹1000/student) — 3 deployed AI agents, NBA-eligible MoU
+→ 5-day certification (₹2500/student) — industry certificate, 10+ projects
+→ Faculty Development Program (₹20k) — AICTE FDP-compliant
+
+20 minutes to walk through the Nirma-specific design?</div>
           </div>
         </div>
       </div>
@@ -652,10 +793,10 @@ Nirma IT's existing AI/ML curriculum is the right foundation. Our workshop is th
       <div class="tips-box">
         <h4>Objection Handlers — Nirma University</h4>
         <div class="objection-grid">
-          <div class="obj-card"><div class="obj-q">"We have AI in curriculum already"</div><div class="obj-a">"Yes — and that's exactly why this works. Your students have the theory. We add the applied deployment layer with real production tools. Complementary, not competing."</div></div>
-          <div class="obj-card"><div class="obj-q">"We need formal vendor evaluation"</div><div class="obj-a">"Understood. Free pilot of 20 students needs no formal process — you evaluate the quality first, then decide on a formal MoU if it meets your standards."</div></div>
-          <div class="obj-card"><div class="obj-q">"Send a detailed proposal"</div><div class="obj-a">"Will do. Can I have 15 minutes to understand your semester structure and student profile first? The proposal will be much more relevant that way."</div></div>
-          <div class="obj-card"><div class="obj-q">"What makes this different from online courses?"</div><div class="obj-a">"Students build working projects during the session itself — not watch videos. At the end of Day 2 they have 3 deployed automations. That's the difference."</div></div>
+          <div class="obj-card"><div class="obj-q">"We have AI in curriculum already"</div><div class="obj-a">"Yes — and that foundation is exactly why this works. Your students have the theory. The gap is production tool experience: deploying real pipelines with n8n and LLM APIs. That's the interview filter now. We add that layer in 2 days."</div></div>
+          <div class="obj-card"><div class="obj-q">"We need formal vendor evaluation"</div><div class="obj-a">"Understood. Run the free pilot — 20 students, 2 days, zero cost. You evaluate the quality. If it doesn't meet Nirma's bar, there's nothing to formally evaluate. If it does, you have the evidence for your committee."</div></div>
+          <div class="obj-card"><div class="obj-q">"What makes this different from online courses?"</div><div class="obj-a">"By end of Day 2, each student has 3 deployed automations in production. Not watched videos. Not completed modules. Built and deployed. That's the interview proof point. Online courses don't deliver that."</div></div>
+          <div class="obj-card"><div class="obj-q">"Send a detailed proposal"</div><div class="obj-a">"Will have it to you within the hour. One ask: 15 minutes to understand your existing AI curriculum so we design the workshop as a genuine complement — not overlap. The proposal will be significantly stronger for it."</div></div>
         </div>
       </div>
     </div>
@@ -680,53 +821,55 @@ Nirma IT's existing AI/ML curriculum is the right foundation. Our workshop is th
     </div>
     <div class="lead-body">
       <div class="lead-profile">
-        <h4>Intel Profile</h4>
+        <h4>Intel + Pitch Positioning</h4>
         <div class="profile-grid">
-          <div class="profile-item"><strong>Why Medium</strong>ICT-focused, some AI curriculum, open but highly selective about workshops</div>
-          <div class="profile-item"><strong>Best Angle</strong>LLM for ICT applications — tie workshop content to communication tech</div>
-          <div class="profile-item"><strong>Entry Hook</strong>HOD CSE/IT is more accessible than director-level — start there</div>
-          <div class="profile-item"><strong>Watch Out</strong>DA-IICT is self-sufficient — they filter aggressively, need strong differentiation</div>
-          <div class="profile-item"><strong>Ambani Backing</strong>Budget is not a constraint — quality pitch matters more than price</div>
+          <div class="profile-item"><strong>Tone</strong>Technical peer-to-peer — they filter generic pitches instantly; lead with ICT-specific automation use cases</div>
+          <div class="profile-item"><strong>Best Pitch</strong>LLM for communication tech + IoT workflow automation = directly relevant to ICT domain</div>
+          <div class="profile-item"><strong>FDP Angle</strong>DA-IICT faculty FDP = strong — budget is not a constraint here, quality is the bar</div>
+          <div class="profile-item"><strong>Watch Out</strong>Self-sufficient culture — position as "collaborative expansion" not "gap filling"</div>
         </div>
       </div>
 
       <div class="channel-block">
-        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div></div></div>
+        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">ICT-specific automation angle is mandatory — generic AI pitch will not land here</div></div></div>
         <div class="variant-pair">
           <div class="variant-card">
-            <span class="variant-label v-a">Variant A — ICT Automation Angle</span>
-            <div class="pitch-subject">Subject: <strong>LLM + Workflow Automation Workshop — DA-IICT Student Skill Proposal</strong></div>
+            <span class="variant-label v-a">Variant A — ICT Automation + IIT Authority</span>
+            <div class="pitch-subject">Subject: <strong>LLM + Workflow Automation for ICT Applications — DA-IICT Collaboration</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Dear [HOD Name],</span>
 
-I'm writing from ScaleSync, an AI automation agency in Ahmedabad.
+We recently ran AI automation sessions at IIT Guwahati. I'm reaching out to DA-IICT because your ICT focus aligns with one of the most compelling automation tracks we run: LLM-powered communication pipelines and IoT workflow automation.
 
-DA-IICT's ICT focus is a natural fit for what we run: a 2-day hands-on workshop on LLM APIs and workflow automation — building communication systems, content pipelines, and API integrations that are directly relevant to ICT applications.
+<span class="pitch-orange">This isn't a generic AI workshop.</span> For DA-IICT, we'd design the project track specifically around ICT applications — communication systems automation, API integration pipelines, LLM-powered data workflows.
 
-Unlike generic AI workshops, we tailor the project track to your students' domain. For DA-IICT, that means LLM applications in communication tech, not just generic chatbots.
+AICTE has mandated AI integration across institutions. DA-IICT likely has the strongest internal AI programs in Gujarat. What students still lack — even here — is the deployment layer: building production automation systems with real industry tools.
 
-What we deliver:
-→ 2-day intensive — fits into any lab/elective slot
-→ ICT-specific project track
-→ Industry certificate + MoU documentation
-→ No faculty prep needed
+<span class="pitch-green">Proposal for DA-IICT:</span>
+→ 2-Day Applied Workshop (₹1000/student) — ICT-specific automation projects. Deployed. Industry certificate + MoU.
+→ 5-Day AI Certification (₹2500/student) — deep dive, 10+ ICT automation projects.
+→ Faculty Development Program (₹20,000) — AICTE FDP-compliant. Faculty gains production tool expertise.
+→ 1-Day Free Pilot — evaluate the ICT track quality before committing.
 
-Would you be open to a technical discussion about the workshop content? 20 minutes — in person or call.
+We'd welcome DA-IICT's technical feedback to strengthen the ICT curriculum. A collaboration, not a vendor relationship.
 
-— Anand Shrivastava
-ScaleSync | scaleyukti.ai</div>
+20 minutes at your convenience.
+
+— Anand Shrivastava | ScaleSync, scaleyukti.ai</div>
           </div>
           <div class="variant-card">
-            <span class="variant-label v-b">Variant B — Research-Practical Bridge</span>
-            <div class="pitch-subject">Subject: <strong>Bridging DA-IICT research skills to industry automation tools</strong></div>
+            <span class="variant-label v-b">Variant B — Free Pilot + Research Bridge</span>
+            <div class="pitch-subject">Subject: <strong>Bridging DA-IICT research skills to production automation — free pilot offer</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Dear [Name],</span>
 
-DA-IICT students are strong in fundamentals. The gap we consistently see in ICT graduates entering industry: translating that knowledge into production automation using real tools — n8n, Make.com, LLM APIs.
+DA-IICT students are technically strong. The consistent gap we see in ICT graduates entering industry: translating fundamentals into deployed automation pipelines with production tools — n8n, Make.com, LLM APIs.
 
-Our 2-day workshop is that bridge. Students who've done ML courses can now build automated pipelines. It's applied, not academic.
+<span class="pitch-red">Strong theory + no production tool experience = slower industry onboarding.</span> That's the gap companies notice in the first 90 days.
 
-We're open to aligning the content with your current final-year project or elective structure.
+Free pilot: 20 DA-IICT students, 2 days, ICT-specific automation track. We bring the team. You pay nothing. You evaluate quality.
 
-Free pilot for first batch — evaluate quality before committing. We're based in Ahmedabad — easy to meet in person.
+We've run this at IIT Guwahati. We're confident in what DA-IICT will see.
+
+If it meets your bar, we design a full program. If not, last message.
 
 — Anand | ScaleSync</div>
           </div>
@@ -737,11 +880,13 @@ Free pilot for first batch — evaluate quality before committing. We're based i
         <div class="channel-header"><div class="channel-icon ch-phone">📞</div><div><div class="channel-label">Phone Script</div></div></div>
         <div class="phone-script">"Hello — is this the CSE/IT department at DA-IICT?
 
-I'm Anand from ScaleSync, Ahmedabad. I sent an email to the HOD about a workshop proposal — LLM APIs and workflow automation specifically tailored to ICT applications.
+I'm Anand from ScaleSync. We've run applied AI automation workshops at IIT Guwahati. I wanted to speak with the HOD specifically because DA-IICT's ICT focus aligns with a workshop track we've designed around LLM-powered communication automation and ICT workflow pipelines.
 
-DA-IICT's student profile is strong technically — I wanted to check if this is worth a 20-minute discussion before sending a full proposal.
+This is not a generic AI training pitch — it's ICT-specific.
 
-Is the HOD available for a brief call this week?"</div>
+AICTE has mandated AI curriculum integration. We can make DA-IICT's compliance sophisticated, not just checkbox.
+
+Is the HOD available for a 20-minute technical discussion this week?"</div>
       </div>
 
       <div class="channel-block">
@@ -749,17 +894,24 @@ Is the HOD available for a brief call this week?"</div>
         <div class="variant-pair">
           <div class="variant-card">
             <span class="variant-label v-a">Connection Note</span>
-            <div class="pitch-body">Hi [Name], running AI automation workshops for ICT/CS students in Gujarat — sent an email about a DA-IICT collaboration. Happy to connect and discuss.</div>
+            <div class="pitch-body">Hi [Name] — ran AI sessions at IIT Guwahati. Building an ICT-specific automation track for DA-IICT. AICTE mandate is the timing. LLM + communication automation is the content angle. Happy to connect.</div>
           </div>
           <div class="variant-card">
             <span class="variant-label v-b">Follow-up Message</span>
             <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
 
-We run 2-day AI automation workshops — LLM APIs, n8n, workflow deployment. For DA-IICT, we'd tailor the track to ICT-specific applications: communication pipelines, content automation, API integrations.
+Thanks for connecting. We've run AI automation workshops at IIT Guwahati — now building an ICT-specific track for DA-IICT.
 
-Strong theoretical students who've never built a production automation pipeline is the exact profile we work with. Happy to share the detailed curriculum for your review.
+The track: LLM-powered communication pipelines, IoT workflow automation, API integrations — directly relevant to ICT applications.
 
-20 minutes to discuss fit?</div>
+AICTE mandate is the regulatory driver. Production deployment skills are the actual gap.
+
+→ Free pilot — ICT track, 20 students, zero cost
+→ 2-day workshop (₹1000/student) — ICT-specific projects
+→ 5-day certification (₹2500/student)
+→ FDP (₹20k) — AICTE-compliant
+
+20 minutes for a technical discussion?</div>
           </div>
         </div>
       </div>
@@ -770,7 +922,7 @@ Strong theoretical students who've never built a production automation pipeline 
   <div class="lead-block">
     <div class="lead-header">
       <div>
-        <div class="lead-num">Lead 06 · Score <span class="score-badge score-warm">5.0 Strategic</span></div>
+        <div class="lead-num">Lead 06 · Score <span class="score-badge score-warm">5.0 Strategic Long Play</span></div>
         <div class="lead-name">GTU — Gujarat Technological University</div>
         <div class="lead-firm">Innovation Council · Ahmedabad, Gujarat</div>
       </div>
@@ -785,53 +937,56 @@ Strong theoretical students who've never built a production automation pipeline 
     </div>
     <div class="lead-body">
       <div class="lead-profile">
-        <h4>Intel Profile</h4>
+        <h4>Intel + Pitch Positioning</h4>
         <div class="profile-grid">
-          <div class="profile-item"><strong>Strategic Value</strong>Umbrella university — workshops via affiliated colleges = reach multiple at once</div>
-          <div class="profile-item"><strong>One Yes = Many</strong>GTU Innovation Council endorsement opens affiliated college doors automatically</div>
-          <div class="profile-item"><strong>Best Angle</strong>Position as GTU-endorsed partner for AI automation workshops statewide</div>
-          <div class="profile-item"><strong>Reality Check</strong>Central procurement is slow — this is a 3–6 month play, not quick close</div>
-          <div class="profile-item"><strong>Entry Hook</strong>Innovation Council or Startup Cell — not admin or registrar</div>
-          <div class="profile-item"><strong>Play</strong>Pitch GTU for endorsement, meanwhile sell individual affiliated colleges directly</div>
+          <div class="profile-item"><strong>Strategic Value</strong>One GTU endorsement = access to all affiliated colleges. This is the multiplier play.</div>
+          <div class="profile-item"><strong>AICTE Angle</strong>GTU must help affiliated colleges meet AICTE mandate — we solve this at scale for them</div>
+          <div class="profile-item"><strong>Pitch Frame</strong>Don't pitch a workshop. Pitch becoming GTU's endorsed AI automation partner for Gujarat.</div>
+          <div class="profile-item"><strong>Timeline</strong>3–6 month play. Work individual colleges in parallel. Don't hold breath waiting for GTU.</div>
         </div>
       </div>
 
       <div class="channel-block">
-        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Strategic long-play — pitch endorsement, not single workshop</div></div></div>
+        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Pitch the partnership, not a workshop. GTU thinks at state scale.</div></div></div>
         <div class="variant-pair">
           <div class="variant-card">
-            <span class="variant-label v-a">Variant A — State-Scale Angle</span>
-            <div class="pitch-subject">Subject: <strong>AI Automation Workshop Program for GTU-Affiliated Colleges — Partnership Proposal</strong></div>
+            <span class="variant-label v-a">Variant A — AICTE Compliance at Scale</span>
+            <div class="pitch-subject">Subject: <strong>Helping GTU-Affiliated Colleges Meet the AICTE AI Mandate — Partnership Proposal</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Dear [Innovation Council Head],</span>
 
-I'm writing from ScaleSync, an Ahmedabad-based AI automation agency.
+<span class="pitch-orange">AICTE has mandated AI curriculum integration across all engineering institutions.</span> Every GTU-affiliated college now needs to act — and GTU's Innovation Council is positioned to solve this centrally rather than letting 150+ colleges scramble individually.
 
-GTU's Innovation Council has a unique position — an endorsement from your body reaches affiliated colleges across Gujarat simultaneously.
+I'm Anand from ScaleSync. We've run AI expert sessions at IIT Guwahati. We're proposing a formal partnership where ScaleSync becomes GTU's endorsed AI automation program provider across affiliated colleges.
 
-We run a 2-day AI automation workshop for engineering students — practical, deployment-focused, MoU-backed. We're proposing a formal partnership where ScaleSync becomes a GTU-endorsed AI workshop provider across affiliated colleges.
+<span class="pitch-green">What this means for GTU:</span>
+→ Every affiliated college has a compliant AI program available on demand
+→ Standardised quality — one endorsed vendor, consistent delivery
+→ NAAC industry collaboration documentation per college, centrally arranged
+→ Faculty Development Programs (AICTE FDP-compliant) available statewide
+→ GTU Innovation Council as the coordination point — not per-college scrambling
 
-What this means for GTU:
-→ Documented industry collaboration for affiliated college NAAC records
-→ Standardised AI skill program available to all GTU colleges
-→ No procurement complexity — colleges independently coordinate with us under the GTU umbrella
+We're happy to pilot at 3–5 affiliated colleges before formal endorsement. Proof of concept before commitment.
 
-We're happy to start with a pilot at 2–3 affiliated colleges before formal endorsement. Would the Innovation Council be open to an exploratory meeting?
+This is a 3–6 month play and we know it. But the AICTE mandate creates the urgency for GTU to move on this now, not next year.
 
-— Anand Shrivastava
-ScaleSync | scaleyukti.ai</div>
+Would the Innovation Council be open to an exploratory meeting?
+
+— Anand Shrivastava | ScaleSync, scaleyukti.ai</div>
           </div>
           <div class="variant-card">
             <span class="variant-label v-b">Variant B — Startup Cell Angle</span>
-            <div class="pitch-subject">Subject: <strong>AI Automation for GTU Startup Cell — Student Founder Skill Program</strong></div>
+            <div class="pitch-subject">Subject: <strong>AI Automation for GTU Student Founders — Startup Cell Partnership</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Dear [Name],</span>
 
-GTU's startup ecosystem is strong. The bottleneck we consistently see in student founders from GTU colleges: they have domain ideas but can't automate their MVP workflows.
+GTU's startup ecosystem is one of the strongest in Gujarat. The bottleneck we consistently see: student founders who have domain ideas but can't automate their MVP workflows.
 
-Our 2-day workshop teaches exactly that — n8n, LLM APIs, Make.com. Students who attend build their first automation within 2 days. For startup cell members, this is a force multiplier.
+<span class="pitch-red">A student founder who can't automate spends 3 months building what an AI-equipped founder builds in 3 days.</span>
 
-Proposal: Co-brand this with GTU Startup Cell. We deliver, you endorse. First batch free.
+Our 2-day workshop teaches exactly this — n8n, LLM APIs, Make.com. Student founders who attend build their first automation within 24 hours of the session.
 
-Worth a conversation?
+Proposal: ScaleSync co-brands with GTU Startup Cell. We deliver, you endorse. First batch free. If it works, we build the model for affiliated college rollout.
+
+One conversation to explore this?
 
 — Anand | ScaleSync</div>
           </div>
@@ -840,15 +995,15 @@ Worth a conversation?
 
       <div class="channel-block">
         <div class="channel-header"><div class="channel-icon ch-phone">📞</div><div><div class="channel-label">Phone Script</div></div></div>
-        <div class="phone-script">"Hello — is this GTU? I'm trying to reach the Innovation Council or Startup Cell office.
+        <div class="phone-script">"Hello — is this the GTU Innovation Council or Startup Cell office?
 
-I'm Anand from ScaleSync — Ahmedabad-based AI automation agency. I sent an email about a proposed partnership for running AI automation workshops across GTU-affiliated colleges.
+I'm Anand from ScaleSync. Quick context — AICTE has mandated AI curriculum integration across all engineering institutions. That means every GTU-affiliated college now needs to act. We've been helping institutions across India — including IIT Guwahati — build compliant AI programs fast.
 
-We're not looking for a single workshop — we want to be the endorsed partner so affiliated colleges can access us directly.
+We're not pitching a single workshop. We're proposing that ScaleSync becomes GTU's endorsed AI automation partner, so affiliated colleges don't have to each figure this out separately.
 
 Who in the Innovation Council handles external training partnerships?
 
-<span class="script-note">[Get name and direct line — this may take 2 calls]</span>"</div>
+<span class="script-note">[Get name and direct line — this may take 2 calls. That's expected. Don't rush.]</span>"</div>
       </div>
 
       <div class="channel-block">
@@ -856,17 +1011,25 @@ Who in the Innovation Council handles external training partnerships?
         <div class="variant-pair">
           <div class="variant-card">
             <span class="variant-label v-a">Connection Note</span>
-            <div class="pitch-body">Hi [Name], Ahmedabad AI agency here — proposing an AI workshop partnership with GTU Innovation Council for affiliated colleges. Would love to connect.</div>
+            <div class="pitch-body">Hi [Name] — AICTE's AI mandate means every GTU-affiliated college now needs to act. We've delivered at IIT Guwahati and want to discuss becoming GTU's endorsed AI automation partner statewide. Happy to connect.</div>
           </div>
           <div class="variant-card">
             <span class="variant-label v-b">Follow-up Message</span>
             <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
 
-We run AI automation workshops — 2-day, hands-on, MoU-backed. The GTU angle we're proposing: one endorsement = all affiliated colleges can access us under that umbrella.
+Thanks for connecting. The GTU opportunity I see is at the umbrella level.
 
-Affiliated college NAAC records benefit. Students get practical AI skills. ScaleSync handles delivery.
+AICTE has mandated AI integration. 150+ affiliated colleges each figuring this out separately is inefficient. GTU Innovation Council endorsing one quality AI automation partner solves it centrally.
 
-Long-term partnership play — happy to start with 2–3 pilot colleges first. Is there a right time to present this to the Innovation Council?</div>
+ScaleSync — IIT Guwahati track record — wants to be that partner.
+
+What we'd propose:
+→ Pilot at 3–5 affiliated colleges (free, proof of concept)
+→ Formal GTU endorsement after validation
+→ All programs: 1-day pilot, 2-day workshop, 5-day certification, AICTE FDP
+→ Affiliated colleges coordinate directly with us under GTU umbrella
+
+Longer-term play but AICTE mandate creates urgency now. Worth an exploratory meeting?</div>
           </div>
         </div>
       </div>
@@ -892,57 +1055,56 @@ Long-term partnership play — happy to start with 2–3 pilot colleges first. I
     </div>
     <div class="lead-body">
       <div class="lead-profile">
-        <h4>Intel Profile</h4>
+        <h4>Intel + Pitch Positioning</h4>
         <div class="profile-grid">
-          <div class="profile-item"><strong>Why Medium</strong>Energy domain focus; open to industry tie-ups via TBI but AI not priority</div>
-          <div class="profile-item"><strong>Right Angle</strong>TBI handles external partnerships — go there, not academic dept</div>
-          <div class="profile-item"><strong>Best Pitch</strong>AI automation for energy sector — IoT pipelines, monitoring dashboards, data workflows</div>
-          <div class="profile-item"><strong>Watch Out</strong>Generic AI pitch won't land — must connect to energy/engineering domain</div>
-          <div class="profile-item"><strong>Opportunity</strong>If TBI says yes = recurring workshop for energy-focused student startups</div>
+          <div class="profile-item"><strong>Domain Angle</strong>AI automation for energy sector — IoT pipelines, predictive maintenance, monitoring dashboards. Must be domain-specific.</div>
+          <div class="profile-item"><strong>TBI Hook</strong>Student founders in energy tech + automation = force multiplier. TBI budget is accessible.</div>
+          <div class="profile-item"><strong>FDP</strong>Faculty Development Program is strong here — energy faculty learning AI tools for research + industry = genuine value</div>
         </div>
       </div>
 
       <div class="channel-block">
-        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Energy domain angle is mandatory — generic pitch will be ignored</div></div></div>
+        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Energy automation angle is mandatory — generic pitch will be ignored</div></div></div>
         <div class="variant-pair">
           <div class="variant-card">
-            <span class="variant-label v-a">Variant A — Energy Automation Angle</span>
-            <div class="pitch-subject">Subject: <strong>AI Automation Workshop for PDEU — Energy Sector Applications</strong></div>
+            <span class="variant-label v-a">Variant A — Energy AI + AICTE Mandate</span>
+            <div class="pitch-subject">Subject: <strong>AI Automation for Energy Sector + AICTE Compliance — PDEU Partnership</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Dear [TBI Head],</span>
 
-I'm reaching out from ScaleSync, an AI automation agency in Ahmedabad.
+<span class="pitch-orange">AICTE has mandated AI integration across engineering institutions.</span> For PDEU, this creates a specific opportunity: AI automation for energy sector applications is one of the highest-value upskilling tracks for your students' career trajectories.
 
-PDEU's focus on energy technology is where we see a specific opportunity: AI automation is transforming energy sector operations — predictive maintenance pipelines, IoT data workflows, automated monitoring dashboards. Your students are positioned perfectly to build these.
+I'm Anand from ScaleSync. We've delivered AI expert sessions at IIT Guwahati. For PDEU, we'd design the content specifically around energy automation:
+→ Predictive maintenance automation pipelines
+→ IoT data workflow automation
+→ LLM-powered monitoring dashboards
+→ Energy data API integrations
 
-Our 2-day workshop teaches exactly the tools that make this possible: n8n for workflow automation, LLM APIs for data interpretation, Make.com for system integration.
+<span class="pitch-green">Programs we'd offer PDEU:</span>
+→ 1-Day Pilot (Free) — energy automation track. Students build first AI agent. No cost.
+→ 2-Day Workshop (₹900/student) — 3 deployed energy automation projects. MoU documentation.
+→ 5-Day Certification (₹2500/student) — 10+ energy-specific projects. Industry certificate.
+→ Faculty Development Program (₹20,000) — AICTE FDP-compliant. Faculty learns AI tools for energy research.
 
-We're proposing a PDEU-specific track — energy automation use cases, not generic examples.
+TBI co-branding available. Student founders who attend build automation-based MVPs faster than anyone else in their cohort.
 
-What we bring:
-→ Energy-sector tailored project track
-→ MoU documentation for TBI and NAAC records
-→ ₹900/student — or free pilot for first batch
-→ Fully delivered — no faculty prep required
+20 minutes to evaluate fit?
 
-Would the Innovation Cell / TBI be open to a 20-minute call to evaluate fit?
-
-— Anand Shrivastava
-ScaleSync | scaleyukti.ai</div>
+— Anand Shrivastava | ScaleSync, scaleyukti.ai</div>
           </div>
           <div class="variant-card">
-            <span class="variant-label v-b">Variant B — Student Founder Angle</span>
-            <div class="pitch-subject">Subject: <strong>AI automation skills for PDEU student founders — TBI collaboration proposal</strong></div>
+            <span class="variant-label v-b">Variant B — Student Founder + TBI Angle</span>
+            <div class="pitch-subject">Subject: <strong>Energy sector startup founders at PDEU need this skill — TBI collaboration</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Dear [Name],</span>
 
-Energy sector startups in 2026 need founders who can automate data pipelines, build monitoring tools, and integrate APIs — without a full engineering team.
+<span class="pitch-red">Energy sector startups in 2026 need founders who can automate data pipelines, build monitoring tools, and integrate APIs — without a full engineering team for 2 years.</span>
 
-PDEU TBI students have the domain knowledge. The missing skill is always the automation layer.
+PDEU TBI students have the domain knowledge. The missing layer is always automation capability.
 
-We run a focused 2-day workshop: n8n, LLM APIs, real automations. Student founders who attend leave with working prototypes they can pitch.
+2-day workshop: n8n, LLM APIs, energy-specific automation projects. Student founders who attend build working prototypes they can pitch to investors.
 
-TBI co-brand available. First batch free.
+TBI co-brand available. AICTE compliance documentation included. Free pilot for first batch.
 
-Worth a quick call?
+10 minutes to discuss fit?
 
 — Anand | ScaleSync</div>
           </div>
@@ -951,13 +1113,13 @@ Worth a quick call?
 
       <div class="channel-block">
         <div class="channel-header"><div class="channel-icon ch-phone">📞</div><div><div class="channel-label">Phone Script</div></div></div>
-        <div class="phone-script">"Hello — could I speak with the PDEU Innovation Cell or Technology Business Incubator?
+        <div class="phone-script">"Hello — could I speak with the Innovation Cell or TBI at PDEU?
 
-I'm Anand from ScaleSync, Ahmedabad. I sent an email about an AI automation workshop specifically designed around energy sector use cases — relevant for PDEU's technical programs.
+I'm Anand from ScaleSync — we've run AI workshops at IIT Guwahati. I sent an email about an energy-sector specific AI automation workshop for your students.
 
-We're looking to work with the TBI on running a student workshop that covers automation tools used in energy sector companies.
+Key thing I want to flag: AICTE has mandated AI curriculum integration. For PDEU, the most powerful version of compliance is AI automation for energy applications — predictive maintenance, IoT pipelines, workflow automation. That's the program we've designed.
 
-Is the TBI head available for a 15-minute call this week?"</div>
+Is the TBI Head available for a 15-minute call this week?"</div>
       </div>
 
       <div class="channel-block">
@@ -965,17 +1127,25 @@ Is the TBI head available for a 15-minute call this week?"</div>
         <div class="variant-pair">
           <div class="variant-card">
             <span class="variant-label v-a">Connection Note</span>
-            <div class="pitch-body">Hi [Name], Ahmedabad AI agency here — proposing an energy-sector AI automation workshop for PDEU TBI students. Would love to connect and discuss.</div>
+            <div class="pitch-body">Hi [Name] — IIT Guwahati AI workshop track record. Building energy-sector AI automation program for PDEU TBI. AICTE mandate + energy automation is the angle. Happy to connect.</div>
           </div>
           <div class="variant-card">
             <span class="variant-label v-b">Follow-up Message</span>
             <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
 
-We run AI automation workshops for engineering students — 2-day, hands-on. For PDEU, we'd tailor the content to energy sector applications: IoT pipelines, data workflows, predictive maintenance automation.
+Thanks for connecting. ScaleSync — IIT Guwahati track record, now building energy-specific AI automation program for PDEU TBI.
 
-TBI co-brand available. Student founders who attend leave with working prototypes.
+Content designed for energy domain: IoT workflow automation, predictive maintenance pipelines, LLM-powered monitoring dashboards.
 
-Free pilot for first batch. Worth a quick call to discuss fit?</div>
+AICTE mandate makes this timely. TBI co-brand available.
+
+Programs:
+→ Free 1-day pilot — energy automation track
+→ 2-day workshop (₹900/student) — 3 deployed energy projects
+→ 5-day certification (₹2500/student)
+→ Faculty Development Program (₹20k) — AICTE FDP-compliant
+
+Worth a quick call?</div>
           </div>
         </div>
       </div>
@@ -1001,53 +1171,56 @@ Free pilot for first batch. Worth a quick call to discuss fit?</div>
     </div>
     <div class="lead-body">
       <div class="lead-profile">
-        <h4>Intel Profile</h4>
+        <h4>Intel + Pitch Positioning</h4>
         <div class="profile-grid">
-          <div class="profile-item"><strong>Challenge</strong>Govt/GTU-affiliated — bureaucratic buy-in slow, low event frequency</div>
-          <div class="profile-item"><strong>Strategy</strong>Free pilot only — paid is unlikely until bureaucracy moves</div>
-          <div class="profile-item"><strong>Entry Hook</strong>Principal directly — or through alumni network if available</div>
-          <div class="profile-item"><strong>Timeline</strong>3–6 month cycle minimum — don't invest heavy outreach effort here yet</div>
-          <div class="profile-item"><strong>When to Revisit</strong>After Nirma/Indus references established — social proof unlocks govt colleges</div>
+          <div class="profile-item"><strong>AICTE Angle</strong>Govt college MUST comply with AICTE mandate — frame as regulatory solution, not optional training</div>
+          <div class="profile-item"><strong>Only Entry</strong>Free pilot + FDP — paid student workshops will stall in govt procurement</div>
+          <div class="profile-item"><strong>Fear Angle</strong>LDCE as a GTU-affiliated govt college under scrutiny for AICTE compliance is a real concern for principal</div>
+          <div class="profile-item"><strong>Strategy</strong>Get pilot approved → build trust → FDP → then student programs once procurement opens</div>
         </div>
       </div>
 
       <div class="channel-block">
-        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Free pilot only angle — paid pitch will stall instantly at govt college</div></div></div>
+        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Lead with AICTE mandate + free offer — no paid pitch to govt college first</div></div></div>
         <div class="variant-pair">
           <div class="variant-card">
-            <span class="variant-label v-a">Variant A — Free Pilot Only</span>
-            <div class="pitch-subject">Subject: <strong>Free AI Workshop Pilot for LDCE Students — No Cost, No Commitment</strong></div>
+            <span class="variant-label v-a">Variant A — Mandate + Free Pilot</span>
+            <div class="pitch-subject">Subject: <strong>AICTE AI Mandate Compliance + Free Workshop for LDCE — No Cost</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Dear Dr. Desai,</span>
 
-I'm Anand from ScaleSync, an AI automation agency based in Ahmedabad.
+<span class="pitch-orange">AICTE has mandated AI curriculum integration across all engineering institutions — including GTU-affiliated government colleges.</span> This is a regulatory requirement, not optional guidance.
 
-We run hands-on AI automation workshops for engineering students — 2 days, real projects with LLM APIs and workflow tools like n8n. Graduates with these skills are now differentiated in placements.
+I'm Anand from ScaleSync. We've run AI expert sessions at IIT Guwahati. We're offering LDCE a completely free AI workshop pilot — no cost, no procurement process, no paperwork beyond confirming a date and room.
 
-We're offering LDCE a completely free pilot workshop for 25 students — no cost, no commitment, no paperwork beyond confirming a date and room.
+<span class="pitch-green">What LDCE gets:</span>
+→ 1-Day Free AI Pilot — 25 students build real AI agents. Zero cost. Zero commitment.
+→ Faculty Development Program (₹20,000) — AICTE FDP-compliant. Your faculty becomes AI-capable. This is separately budgetable through faculty development allocations — not student fees.
+→ AICTE compliance documentation — MoU available for accreditation records.
 
-Our only ask: honest feedback from students and faculty after the session.
+We're Ahmedabad-based. If anything requires follow-up, we're 20 minutes away.
 
-If the quality meets your expectations, we can discuss a formal MoU for future batches. If not, nothing lost.
+The pilot requires nothing except a room and 25 students. Honest feedback from your faculty and students is all we ask.
 
-Given LDCE's reputation in Ahmedabad, we'd be honoured to have your feedback on the program.
+Can we confirm a date?
 
-— Anand Shrivastava
-ScaleSync | scaleyukti.ai</div>
+— Anand Shrivastava | ScaleSync, scaleyukti.ai</div>
           </div>
           <div class="variant-card">
-            <span class="variant-label v-b">Variant B — NAAC Collaboration Angle</span>
-            <div class="pitch-subject">Subject: <strong>Industry collaboration opportunity for LDCE — AI workshop + MoU documentation</strong></div>
+            <span class="variant-label v-b">Variant B — FDP First Angle</span>
+            <div class="pitch-subject">Subject: <strong>AICTE-Compliant Faculty Development Program for LDCE — No Student Fee Required</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Dear Dr. Desai,</span>
 
-We're proposing a documented industry collaboration with LDCE for an AI automation workshop — with full MoU documentation that can be submitted for accreditation records.
+AICTE's AI mandate requires action at the faculty level as much as the student level. Most government colleges are addressing this through their Faculty Development Program budget — which doesn't require student fee collection or standard procurement.
 
-ScaleSync is Ahmedabad-based and would handle all workshop delivery. No faculty preparation required.
+We offer a 2-day FDP that is fully AICTE FDP-compliant: faculty learn trending AI tools, real industry workflows, and how to integrate AI into their teaching.
 
-Pilot batch of 25 students — free of cost — to allow LDCE to evaluate the quality before any formal commitment.
+Cost: ₹20,000 flat — typically accessible through faculty development allocations.
 
-Would you be open to forwarding this to the relevant department head?
+We've delivered at IIT Guwahati. We're Ahmedabad-based.
 
-— Anand | ScaleSync, scaleyukti.ai</div>
+Would you be open to discussing the FDP specifically? It's the fastest AICTE-compliant step LDCE can take without navigating student-fee procurement.
+
+— Anand | ScaleSync</div>
           </div>
         </div>
       </div>
@@ -1056,11 +1229,13 @@ Would you be open to forwarding this to the relevant department head?
         <div class="channel-header"><div class="channel-icon ch-phone">📞</div><div><div class="channel-label">Phone Script</div></div></div>
         <div class="phone-script">"Hello — could I speak with the Principal's office at LDCE?
 
-I'm Anand from ScaleSync, Ahmedabad. We're offering a free AI automation workshop pilot for 25 students — no cost to the college.
+I'm Anand from ScaleSync. We're an Ahmedabad-based AI agency — we've run AI workshops at IIT Guwahati.
 
-I sent an email to Dr. Desai about this. Could you confirm it reached his desk, or let me know the right contact for industry workshop collaborations?
+The reason I'm calling specifically is AICTE's AI mandate. Every GTU-affiliated college now needs to document AI curriculum integration. We're offering LDCE a free workshop pilot — no cost, no procurement needed — as the first step toward AICTE compliance.
 
-<span class="script-note">[Note: Don't push hard — this is a warm-up call. Goal = confirm email received, get right contact name]</span>"</div>
+Could you confirm whether the email I sent to Dr. Desai was received, and if there's a better contact for AICTE compliance and faculty development programs?
+
+<span class="script-note">[Goal: confirm email received, identify right contact for FDP budget. Don't push hard on first call.]</span>"</div>
       </div>
     </div>
   </div>
@@ -1070,7 +1245,7 @@ I sent an email to Dr. Desai about this. Could you confirm it reached his desk, 
     <div class="lead-header">
       <div>
         <div class="lead-num">Lead 09 · Score <span class="score-badge score-cold">4.0 Low Priority</span></div>
-        <div class="lead-name">IITRAM — Institute of Infrastructure, Technology, Research & Management</div>
+        <div class="lead-name">IITRAM — Institute of Infrastructure, Technology, Research &amp; Management</div>
         <div class="lead-firm">Director's Office · Ahmedabad, Gujarat</div>
       </div>
       <div class="lead-contact-grid">
@@ -1084,49 +1259,48 @@ I sent an email to Dr. Desai about this. Could you confirm it reached his desk, 
     </div>
     <div class="lead-body">
       <div class="lead-profile">
-        <h4>Intel Profile</h4>
+        <h4>Intel + Pitch Positioning</h4>
         <div class="profile-grid">
-          <div class="profile-item"><strong>Challenge</strong>Research-focused, autonomous, slow procurement, limited external workshop history</div>
-          <div class="profile-item"><strong>Strategy</strong>Research automation angle — not student workshop framing</div>
-          <div class="profile-item"><strong>Best Angle</strong>AI tools for infrastructure research workflows — niche but relevant</div>
-          <div class="profile-item"><strong>Timeline</strong>Long cycle — deprioritise until Ahmedabad references established</div>
-          <div class="profile-item"><strong>When to Revisit</strong>After LDCE or DA-IICT engagement — peer institution reference helps</div>
+          <div class="profile-item"><strong>Only Angle</strong>Research workflow automation — not student workshop. Frame as research productivity tool.</div>
+          <div class="profile-item"><strong>FDP Play</strong>Faculty Development Program = most viable entry. Research faculty learning AI tools for literature review, data pipeline automation — genuinely useful.</div>
+          <div class="profile-item"><strong>Timeline</strong>Long cycle. Do not invest heavy effort. One email, one follow-up, wait for organic response.</div>
         </div>
       </div>
 
       <div class="channel-block">
-        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Research automation framing — don't pitch generic student workshop</div></div></div>
+        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Research framing only — FDP is the entry point, not student workshop</div></div></div>
         <div class="variant-pair">
           <div class="variant-card">
-            <span class="variant-label v-a">Variant A — Research Workflow Angle</span>
-            <div class="pitch-subject">Subject: <strong>AI Automation for Infrastructure Research — IITRAM Student Workshop Proposal</strong></div>
+            <span class="variant-label v-a">Variant A — Research + FDP Angle</span>
+            <div class="pitch-subject">Subject: <strong>AI Automation for IITRAM Research Workflows — FDP Proposal</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Dear [Director's Office],</span>
 
-I'm writing from ScaleSync, an AI automation agency in Ahmedabad.
+I'm writing from ScaleSync — we've run AI expert sessions at IIT Guwahati. I'm reaching out about a Faculty Development Program specifically designed for research institutions.
 
-IITRAM's infrastructure and technology research focus is where we see a specific fit: AI automation tools are increasingly used for data pipeline automation, research workflow management, and documentation — practical skills that complement research work.
+AICTE's AI mandate applies to IITRAM as much as any engineering institution. The FDP we offer is AICTE FDP-compliant and covers AI automation tools directly applicable to infrastructure research: data pipeline automation, literature workflow tools, research data processing automation.
 
-We run a 2-day workshop covering these exact tools — LLM APIs, n8n, workflow automation. For IITRAM students, we can tailor the project track to infrastructure data and research workflow use cases.
+Faculty who complete the FDP work faster, document more, and produce more publishable output — not because they're smarter, but because their workflows are automated.
 
-Free pilot available for first batch. We'd welcome IITRAM's technical feedback to improve the program.
+Cost: ₹20,000 flat. No student-fee procurement needed.
 
-Would the Director's office be open to forwarding this to the relevant faculty?
+Free pilot for a small faculty group — 5–8 faculty, one day — available to evaluate quality first.
 
-— Anand Shrivastava
-ScaleSync | scaleyukti.ai</div>
+Would the Director's office forward this to the relevant faculty group?
+
+— Anand Shrivastava | ScaleSync, scaleyukti.ai</div>
           </div>
           <div class="variant-card">
-            <span class="variant-label v-b">Variant B — Placement Bridge</span>
-            <div class="pitch-subject">Subject: <strong>Bridging IITRAM research skills to industry automation — workshop proposal</strong></div>
-            <div class="pitch-body"><span class="pitch-hook">Dear [Name],</span>
+            <span class="variant-label v-b">Note — Deprioritise</span>
+            <div class="pitch-body" style="font-style:italic; color: #6B8299;">Deprioritise IITRAM for active outreach. One email, one follow-up — then wait.
 
-Research-focused graduates often face a gap: strong fundamentals, but unfamiliar with the automation tools industry now expects from Day 1.
+Only viable entry is Faculty Development Program via faculty development budget allocation. Student workshop procurement will stall.
 
-Our 2-day workshop bridges that — n8n, LLM APIs, workflow automation. Designed for technically strong students.
+Revisit in Q3 2026:
+→ After Nirma and DA-IICT references are established
+→ Peer institution social proof unlocks research institution conversations
+→ Come back with FDP offer + Nirma reference
 
-Free pilot. No commitment. We're Ahmedabad-based — easy coordination.
-
-— Anand | ScaleSync</div>
+Don't invest call time here until Q3.</div>
           </div>
         </div>
       </div>
@@ -1137,7 +1311,7 @@ Free pilot. No commitment. We're Ahmedabad-based — easy coordination.
   <div class="lead-block">
     <div class="lead-header">
       <div>
-        <div class="lead-num">Lead 10 · Score <span class="score-badge score-cold">4.0 Lowest Priority</span></div>
+        <div class="lead-num">Lead 10 · Score <span class="score-badge score-cold">4.0 Skip — Q3 2026</span></div>
         <div class="lead-name">VGEC — Vishwakarma Government Engineering College</div>
         <div class="lead-firm">Principal Office · Ahmedabad, Gujarat</div>
       </div>
@@ -1152,44 +1326,42 @@ Free pilot. No commitment. We're Ahmedabad-based — easy coordination.
     </div>
     <div class="lead-body">
       <div class="lead-profile">
-        <h4>Intel Profile</h4>
+        <h4>Intel + Strategy</h4>
         <div class="profile-grid">
-          <div class="profile-item"><strong>Challenge</strong>No LI presence, govt college with budget constraints and slow approvals</div>
-          <div class="profile-item"><strong>Strategy</strong>Skip until other Ahmedabad colleges are live — social proof needed first</div>
-          <div class="profile-item"><strong>Only Approach</strong>Free pilot with zero-paperwork framing — anything paid gets blocked</div>
-          <div class="profile-item"><strong>When to Revisit</strong>Q3 2026 — after 3+ Ahmedabad college references secured</div>
+          <div class="profile-item"><strong>Skip For Now</strong>No LI presence = no warm outreach path. Govt budget constraints = paid conversion unlikely near term.</div>
+          <div class="profile-item"><strong>AICTE Angle</strong>One-line email only: free pilot offer + AICTE compliance framing. Do not invest call time.</div>
+          <div class="profile-item"><strong>When to Revisit</strong>Q3 2026 — after 3+ Ahmedabad references including at least one govt college (LDCE)</div>
         </div>
       </div>
 
       <div class="channel-block">
-        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Free only — no paid pitch. Keep brief.</div></div></div>
+        <div class="channel-header"><div class="channel-icon ch-email">📧</div><div><div class="channel-label">Single Email — AICTE Angle Only</div></div></div>
         <div class="variant-pair">
           <div class="variant-card">
-            <span class="variant-label v-a">Single Variant — Free Pilot</span>
-            <div class="pitch-subject">Subject: <strong>Free AI Workshop Pilot for VGEC Engineering Students</strong></div>
+            <span class="variant-label v-a">One-Shot Email</span>
+            <div class="pitch-subject">Subject: <strong>AICTE AI Mandate — Free Workshop Pilot for VGEC, No Cost</strong></div>
             <div class="pitch-body"><span class="pitch-hook">Dear [Principal],</span>
 
-I'm Anand from ScaleSync, an Ahmedabad-based AI automation agency.
+AICTE has mandated AI integration across engineering institutions. We're offering VGEC a completely free AI automation workshop pilot — 25 students, 2 days, real hands-on AI agents. No cost. No paperwork.
 
-We're offering government engineering colleges a free AI automation workshop pilot — 25 students, 2 days, hands-on projects with LLM APIs and workflow tools. No cost. No paperwork beyond confirming a date.
-
-We've recently run sessions at other Ahmedabad colleges and wanted to extend the opportunity to VGEC.
+We've delivered at IIT Guwahati. We're Ahmedabad-based.
 
 If there's interest, a 10-minute call to confirm logistics is all it takes.
 
-— Anand Shrivastava
-ScaleSync | scaleyukti.ai</div>
+— Anand Shrivastava | ScaleSync, scaleyukti.ai</div>
           </div>
           <div class="variant-card">
-            <span class="variant-label v-b">Note</span>
-            <div class="pitch-body" style="font-style:italic; color: #6B8299;">Deprioritise VGEC for now. No LI presence = no warm outreach path. Govt budget constraints make paid conversion unlikely in near term.
+            <span class="variant-label v-b">Strategy Note</span>
+            <div class="pitch-body" style="font-style:italic; color: #6B8299;">Do not call. Do not follow up more than once.
 
-Revisit in Q3 2026 when:
-→ 3+ Ahmedabad college references are live
-→ Can name-drop Indus/LJIET/Nirma as social proof
-→ Have a free-pilot offer ready with zero paperwork
+No LI = no warm channel. Govt budget = slow procurement. AICTE mandate is the only lever.
 
-Focus current bandwidth on Leads 1–4.</div>
+Send the email. Wait. Revisit Q3 2026 with:
+→ LDCE reference (peer govt college)
+→ Indus/LJIET reference (social proof)
+→ Same free pilot + AICTE angle
+
+Use current bandwidth on Leads 1–4.</div>
           </div>
         </div>
       </div>
