@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScaleSync — Vadodara Engineering College Pitch Decks 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0D1B2A; color: #E8EDF2; min-height: 100vh; }
+  .topbar { background: #060F18; border-bottom: 2px solid #F37021; padding: 0.85rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+  .topbar-brand { font-size: 1rem; font-weight: 800; color: #F37021; }
+  .topbar-tag { font-size: 0.72rem; color: #5A6A7A; }
+  .hero { background: linear-gradient(135deg, #060F18 0%, #0D1B2A 60%, #0a1f30 100%); padding: 3.5rem 2rem 2.5rem; text-align: center; border-bottom: 1px solid #1a2e40; }
+  .hero-badge { display: inline-block; background: rgba(243,112,33,0.12); border: 1px solid rgba(243,112,33,0.35); color: #F37021; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.3rem 0.9rem; border-radius: 20px; margin-bottom: 1rem; }
+  .hero h1 { font-size: 2.2rem; font-weight: 900; color: #E8EDF2; line-height: 1.2; margin-bottom: 0.75rem; }
+  .hero h1 span { color: #F37021; }
+  .hero-sub { color: #6B8299; font-size: 0.92rem; max-width: 640px; margin: 0 auto 2rem; line-height: 1.6; }
+  .hero-stats { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; }
+  .hstat { text-align: center; }
+  .hstat-num { font-size: 1.8rem; font-weight: 900; color: #F37021; }
+  .hstat-label { font-size: 0.7rem; color: #6B8299; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.2rem; }
+  .section { max-width: 980px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+  .section-title { font-size: 1.15rem; font-weight: 800; color: #F37021; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.3rem; }
+  .section-sub { color: #6B8299; font-size: 0.82rem; margin-bottom: 1.5rem; }
+  .lead-block { background: #101E2E; border: 1px solid #1a2e40; border-radius: 14px; margin-bottom: 3rem; overflow: hidden; }
+  .lead-header { background: linear-gradient(135deg, #0a1628 0%, #0D1B2A 100%); border-bottom: 2px solid #F37021; padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; }
+  .lead-num { font-size: 0.7rem; font-weight: 700; color: #F37021; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.3rem; }
+  .lead-name { font-size: 1.35rem; font-weight: 900; color: #E8EDF2; }
+  .lead-firm { font-size: 0.88rem; color: #6B8299; margin-top: 0.2rem; }
+  .lead-contact-grid { display: flex; gap: 2rem; flex-wrap: wrap; }
+  .contact-item { font-size: 0.78rem; color: #94A3B8; }
+  .contact-item strong { color: #F37021; display: block; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.07em; }
+  .lead-body { padding: 1.5rem 2rem; }
+  .lead-profile { background: rgba(243,112,33,0.06); border: 1px solid rgba(243,112,33,0.15); border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .lead-profile h4 { font-size: 0.72rem; font-weight: 700; color: #F37021; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.6rem; }
+  .profile-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.6rem; }
+  .profile-item { font-size: 0.8rem; color: #94A3B8; }
+  .profile-item strong { color: #F37021; }
+  .score-badge { display: inline-block; padding: 0.25rem 0.7rem; border-radius: 20px; font-size: 0.78rem; font-weight: 800; margin-left: 0.5rem; }
+  .score-hot { background: rgba(34,197,94,0.15); color: #86efac; border: 1px solid rgba(34,197,94,0.3); }
+  .score-warm { background: rgba(251,191,36,0.15); color: #fde68a; border: 1px solid rgba(251,191,36,0.3); }
+  .score-cold { background: rgba(148,163,184,0.1); color: #94A3B8; border: 1px solid rgba(148,163,184,0.2); }
+  .channel-block { margin-bottom: 1.75rem; }
+  .channel-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+  .channel-icon { width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; flex-shrink: 0; }
+  .ch-email { background: rgba(59,130,246,0.15); }
+  .ch-phone { background: rgba(34,197,94,0.15); }
+  .ch-linkedin { background: rgba(14,165,233,0.15); }
+  .channel-label { font-size: 0.85rem; font-weight: 700; color: #E8EDF2; }
+  .channel-sublabel { font-size: 0.7rem; color: #6B8299; }
+  .variant-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 700px) { .variant-pair { grid-template-columns: 1fr; } }
+  .variant-card { background: #0D1B2A; border: 1px solid #1a2e40; border-radius: 10px; padding: 1.1rem; }
+  .variant-label { font-size: 0.62rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; padding: 0.18rem 0.5rem; border-radius: 3px; margin-bottom: 0.75rem; display: inline-block; }
+  .v-a { background: rgba(243,112,33,0.15); color: #F37021; }
+  .v-b { background: rgba(20,184,166,0.15); color: #5eead4; }
+  .pitch-subject { font-size: 0.7rem; color: #6B8299; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .pitch-subject strong { color: #94A3B8; font-weight: 600; }
+  .pitch-body { font-size: 0.8rem; color: #94A3B8; line-height: 1.65; white-space: pre-wrap; }
+  .pitch-hook { font-weight: 700; color: #E8EDF2; }
+  .phone-script { background: #0D1B2A; border: 1px solid #1a2e40; border-radius: 10px; padding: 1.1rem; font-size: 0.8rem; color: #94A3B8; line-height: 1.65; white-space: pre-wrap; }
+  .script-note { font-size: 0.72rem; color: rgba(34,197,94,0.8); font-style: italic; }
+  .tips-box { background: rgba(20,184,166,0.05); border: 1px solid rgba(20,184,166,0.2); border-radius: 8px; padding: 1rem 1.25rem; margin-top: 1rem; }
+  .tips-box h4 { font-size: 0.72rem; font-weight: 700; color: #5eead4; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.6rem; }
+  .tips-box ul { padding-left: 1.1rem; }
+  .tips-box li { font-size: 0.78rem; color: #6B8299; line-height: 1.6; margin-bottom: 0.3rem; }
+  .objection-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 1rem; }
+  @media (max-width: 600px) { .objection-grid { grid-template-columns: 1fr; } }
+  .obj-card { background: #0D1B2A; border: 1px solid #1a2e40; border-radius: 8px; padding: 0.9rem; }
+  .obj-q { font-size: 0.75rem; font-weight: 700; color: #fca5a5; margin-bottom: 0.4rem; }
+  .obj-a { font-size: 0.77rem; color: #94A3B8; line-height: 1.55; }
+  .sequence-steps { display: flex; gap: 0; flex-direction: column; position: relative; padding-left: 1.8rem; border-left: 2px solid #1a2e40; margin-left: 0.75rem; }
+  .seq-step { position: relative; padding: 0 0 1.25rem 1.5rem; }
+  .seq-step::before { content: attr(data-step); position: absolute; left: -1.3rem; top: 0; width: 1.2rem; height: 1.2rem; background: #F37021; border-radius: 50%; font-size: 0.6rem; font-weight: 900; color: #000; display: flex; align-items: center; justify-content: center; transform: translateX(-50%); }
+  .seq-day { font-size: 0.65rem; font-weight: 700; color: #F37021; text-transform: uppercase; letter-spacing: 0.08em; }
+  .seq-action { font-size: 0.82rem; color: #E8EDF2; font-weight: 600; margin: 0.15rem 0; }
+  .seq-note { font-size: 0.75rem; color: #6B8299; }
+  .global-tips { background: #101E2E; border: 1px solid #1a2e40; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 3rem; }
+  .global-tips h3 { font-size: 1rem; font-weight: 800; color: #F37021; margin-bottom: 1rem; }
+  .tips-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  @media (max-width: 600px) { .tips-two-col { grid-template-columns: 1fr; } }
+  .tips-col h4 { font-size: 0.72rem; font-weight: 700; color: #5eead4; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.6rem; }
+  .tips-col ul { padding-left: 1.1rem; }
+  .tips-col li { font-size: 0.78rem; color: #94A3B8; line-height: 1.6; margin-bottom: 0.35rem; }
+  .divider { border: none; border-top: 1px solid #1a2e40; margin: 0.5rem 0 1.5rem; }
+  footer { text-align: center; padding: 1.5rem; font-size: 0.72rem; color: #3A5068; border-top: 1px solid #1a2e40; }
+  .priority-table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; font-size: 0.82rem; }
+  .priority-table th { padding: 0.6rem 1rem; text-align: left; color: #6B8299; font-weight: 600; border-bottom: 2px solid #F37021; background: #060F18; }
+  .priority-table td { padding: 0.65rem 1rem; border-bottom: 1px solid #1a2e40; color: #94A3B8; }
+  .priority-table tr:hover td { background: #101E2E; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-brand">⚡ ScaleSync — AI Automation Agency</div>
+  <div class="topbar-tag">Vadodara Engineering College Pitch Decks 2026 · Internal Use Only</div>
+</div>
+
+<div class="hero">
+  <div class="hero-badge">Internal Sales Intelligence</div>
+  <h1>Vadodara<br><span>Engineering College Pitch Decks</span></h1>
+  <p class="hero-sub">10 verified engineering college leads in Vadodara — full pitch decks with Email, Phone, and LinkedIn outreach (A/B variants) for AI Workshop sales. Priority-ranked by Intel Score. April 2026.</p>
+  <div class="hero-stats">
+    <div class="hstat"><div class="hstat-num">10</div><div class="hstat-label">College Leads</div></div>
+    <div class="hstat"><div class="hstat-num">3</div><div class="hstat-label">Channels</div></div>
+    <div class="hstat"><div class="hstat-num">2</div><div class="hstat-label">Variants Each</div></div>
+    <div class="hstat"><div class="hstat-num">3</div><div class="hstat-label">Score 6.5+ Leads</div></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Outreach Strategy — Vadodara</div>
+  <div class="section-sub">Market intelligence and sequence before first contact</div>
+
+  <div class="global-tips">
+    <h3>Vadodara College Market — What You Need to Know</h3>
+    <div class="tips-two-col">
+      <div class="tips-col">
+        <h4>What These Colleges Care About</h4>
+        <ul>
+          <li>Parul University is the #1 priority in the entire Gujarat outreach — vendor-friendly mega campus, NAAC A++, 173K+ LI followers</li>
+          <li>GSFC University has PSU backing = real procurement budget; frame workshop as CSR/skill development initiative</li>
+          <li>Navrachana has IBM/Microsoft partnerships in place — position ScaleSync as complementary AI-automation layer, not a competitor</li>
+          <li>ITM Group brand = industry-linked culture; T&P cell is the fastest entry point</li>
+          <li>Govt colleges (MSU Baroda, IIIT Vadodara) need research/curriculum angle, not vendor pitch</li>
+        </ul>
+      </div>
+      <div class="tips-col">
+        <h4>Tone Rules for This Market</h4>
+        <ul>
+          <li>Vadodara responds well to "Baroda" local phrasing — use "Vadodara/Baroda" interchangeably to show familiarity</li>
+          <li>Parul and GSFC respond to data: student placement rates, automation project demos, portfolio outputs</li>
+          <li>IIIT Vadodara: lead with AI/ML curriculum integration angle — not a paid workshop, a research collaboration</li>
+          <li>MSU Baroda: slow procurement; offer free pilot first, get internal champion before formal proposal</li>
+          <li>Best window: Aug–Oct (post-admission rush); Jan–Feb (pre-placement season push)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title" style="margin-bottom:0.5rem;">Priority Ranking</div>
+  <div class="section-sub" style="margin-bottom:1rem;">Sorted by Intel Score — attack top 4 first</div>
+  <table class="priority-table">
+    <thead>
+      <tr><th>#</th><th>College</th><th>Score</th><th>Why</th><th>Entry Point</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Parul University</td><td><span class="score-badge score-hot">9.0 🔥</span></td><td>Vendor-friendly mega campus, NAAC A++, highest event frequency</td><td>CSR / Innovation Cell</td></tr>
+      <tr><td>2</td><td>Navrachana University</td><td><span class="score-badge score-hot">7.0 🔥</span></td><td>Fast decisions, IBM/MS partnerships, entrepreneurship-first culture</td><td>HOD CS/IT</td></tr>
+      <tr><td>3</td><td>GSFC University</td><td><span class="score-badge score-warm">6.5</span></td><td>PSU backing = real budget, active LI, CSR track record</td><td>Training & Placement</td></tr>
+      <tr><td>4</td><td>ITM SLS Baroda</td><td><span class="score-badge score-warm">6.5</span></td><td>ITM Group brand, industry-linked, open to paid training vendors</td><td>Academics/Innovation</td></tr>
+      <tr><td>5</td><td>Neotech Technical Campus</td><td><span class="score-badge score-warm">6.0</span></td><td>Active company LI, growing campus, responds to industry outreach</td><td>T&P / Innovation</td></tr>
+      <tr><td>6</td><td>VIE – Vadodara</td><td><span class="score-badge score-cold">5.5</span></td><td>Moderate event history; no LI — approach via WhatsApp/email only</td><td>HOD IT/CSE</td></tr>
+      <tr><td>7</td><td>Sigma Institute</td><td><span class="score-badge score-cold">5.5</span></td><td>Mid-tier private, needs budget clarity before decision</td><td>Training Head</td></tr>
+      <tr><td>8</td><td>IIIT Vadodara</td><td><span class="score-badge score-cold">5.0</span></td><td>Research culture; use AI/ML curriculum angle, not vendor pitch</td><td>Director / CSE HOD</td></tr>
+      <tr><td>9</td><td>MSU Baroda (FT&E)</td><td><span class="score-badge score-cold">4.5</span></td><td>Heritage govt; slow procurement — free pilot only approach</td><td>Dean, Tech & Engg</td></tr>
+      <tr><td>10</td><td>NRTU</td><td><span class="score-badge score-cold">4.0</span></td><td>Verify contact existence — limited public presence</td><td>Principal / Dean</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-title" style="margin-bottom:0.5rem;">Recommended Outreach Sequence (Per Lead)</div>
+  <div class="sequence-steps" style="margin-top:1rem;">
+    <div class="seq-step" data-step="1">
+      <div class="seq-day">Day 1</div>
+      <div class="seq-action">Send Email — Variant A</div>
+      <div class="seq-note">Personal subject. Reference their campus activity or placement stat. No attachments. Mention Gujarat/Ahmedabad base — regional trust signal.</div>
+    </div>
+    <div class="seq-step" data-step="2">
+      <div class="seq-day">Day 3</div>
+      <div class="seq-action">LinkedIn Connection Request</div>
+      <div class="seq-note">Short note: "Sent an email about an AI workshop partnership for your students — Gujarat-based AI agency." No pitch.</div>
+    </div>
+    <div class="seq-step" data-step="3">
+      <div class="seq-day">Day 5</div>
+      <div class="seq-action">Phone Call — Script Below</div>
+      <div class="seq-note">If no reply. Reference email. Under 90 seconds. Goal = 15-min call, not a sale.</div>
+    </div>
+    <div class="seq-step" data-step="4">
+      <div class="seq-day">Day 8</div>
+      <div class="seq-action">LinkedIn Message — Follow-up</div>
+      <div class="seq-note">Soft follow-up. Share one stat on student AI skill gap. Ask a question. Mention Parul or Ahmedabad anchor once enrolled.</div>
+    </div>
+    <div class="seq-step" data-step="5">
+      <div class="seq-day">Day 14</div>
+      <div class="seq-action">Email — Variant B (Final)</div>
+      <div class="seq-note">Different angle. Mention free pilot batch offer. Last contact if no response — move on.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== LEAD 1: PARUL UNIVERSITY ===== -->
+<div class="section">
+  <div class="lead-block">
+    <div class="lead-header">
+      <div>
+        <div class="lead-num">Lead 01 · Score <span class="score-badge score-hot">9.0 🔥 Highest Priority</span></div>
+        <div class="lead-name">Parul University</div>
+        <div class="lead-firm">CSR / Innovation Cell · Vadodara, Gujarat</div>
+      </div>
+      <div class="lead-contact-grid">
+        <div class="contact-item"><strong>Contact</strong>CSR / Innovation Cell Head</div>
+        <div class="contact-item"><strong>Phone</strong>+91-2668-260084</div>
+        <div class="contact-item"><strong>Email</strong>admissions@paruluniversity.ac.in</div>
+        <div class="contact-item"><strong>Website</strong>paruluniversity.ac.in</div>
+        <div class="contact-item"><strong>Type</strong>Private — NAAC A++</div>
+        <div class="contact-item"><strong>LinkedIn</strong>linkedin.com/school/paruluniversity</div>
+      </div>
+    </div>
+    <div class="lead-body">
+      <div class="lead-profile">
+        <h4>Intel Profile</h4>
+        <div class="profile-grid">
+          <div class="profile-item"><strong>Why Hot</strong>173K+ LI followers, NAAC A++, mega campus, highest event frequency in Vadodara</div>
+          <div class="profile-item"><strong>Entry Hook</strong>Vendor-friendly — CSR/Innovation Cell runs external workshops regularly</div>
+          <div class="profile-item"><strong>Best Angle</strong>Scale: workshop for 200–500 students = anchor deal; frames ScaleSync as Gujarat's go-to AI agency</div>
+          <div class="profile-item"><strong>Social Proof</strong>Parul as logo = all other Vadodara colleges take you seriously</div>
+          <div class="profile-item"><strong>Opportunity</strong>#1 priority in entire Vadodara list — close this first</div>
+          <div class="profile-item"><strong>Watch Out</strong>Big campus = multiple decision-makers; get Innovation Cell contact name before calling</div>
+        </div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-email">📧</div>
+          <div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">2 variants — test A first, B if no reply by Day 14</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Variant A — Scale Angle</span>
+            <div class="pitch-subject">Subject: <strong>AI Automation Workshop for Parul University Students — Gujarat Agency Partnership</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Innovation Cell Head],</span>
+
+I'm Anand from ScaleSync — an AI automation agency based in Gujarat (Ahmedabad).
+
+We run hands-on AI automation workshops for engineering students — covering n8n, Make.com, LLM APIs, and workflow automation tools that students can deploy within 2 days and showcase in interviews or hackathons.
+
+Parul University's scale and NAAC A++ standing caught our attention. With your event infrastructure, we can run this for 200–500 students in a single batch — making it the largest AI automation workshop in Vadodara this year.
+
+What we offer:
+→ 2-day intensive (fits any break period or add-on slot)
+→ ₹800–1000/student — MoU-backed, industry certificate included
+→ Zero prep from your faculty — fully delivered by our team
+→ GitHub project portfolio per student
+
+Since you run workshops regularly, a 15-minute call to check calendar fit should be enough. This week?
+
+— Anand Shrivastava
+ScaleSync AI Automation | scaleyukti.ai</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Variant B — Free Pilot Angle</span>
+            <div class="pitch-subject">Subject: <strong>Free AI workshop pilot for 30 Parul students — zero commitment needed</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
+
+We're a Gujarat-based AI agency running automation workshops at engineering campuses. Parul University is our first-choice anchor in Vadodara given your campus scale and event culture.
+
+Offer: Free pilot batch of 30 students. You see the quality — real hands-on projects with LLM APIs and automation tools — before committing to anything paid.
+
+If it lands well, we discuss a paid MoU for the next semester batch (200–500 students). If not, you've lost nothing except 2 days of room space.
+
+Worth a 15-minute call to check if the calendar works?
+
+— Anand | ScaleSync, scaleyukti.ai</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-phone">📞</div>
+          <div><div class="channel-label">Phone Script</div><div class="channel-sublabel">Day 5 if no email reply — under 90 seconds</div></div>
+        </div>
+        <div class="phone-script"><span class="script-note">[When answered]</span>
+"Hello — am I reaching the Innovation Cell or CSR office at Parul University?
+
+Great. I'm Anand from ScaleSync — we're an AI automation agency based in Gujarat. I'd sent an email earlier about a hands-on AI workshop partnership for your engineering students.
+
+We've been running these at colleges across Gujarat — given Parul's scale and event frequency, I thought this could be a flagship collaboration for us both.
+
+Is there a right person for industry workshop collaborations I should speak with?
+
+<span class="script-note">[If they ask more]</span> It's a 2-day paid workshop — ₹800–1000 per student, fully delivered by our team, MoU documentation included. We can run 200–500 students in a single batch. Or start with a free pilot of 30 students — zero commitment. Would a 15-minute call with the right person this week work?"</div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-linkedin">💼</div>
+          <div><div class="channel-label">LinkedIn Outreach</div><div class="channel-sublabel">Connection note + follow-up message variants</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Connection Note (150 chars)</span>
+            <div class="pitch-body">Hi [Name], I run AI automation workshops for engineering colleges in Gujarat — sent an email about a Parul University partnership. Happy to connect.</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Follow-up Message (after connect)</span>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
+
+Thanks for connecting. We're ScaleSync — a Gujarat-based AI agency running hands-on automation workshops for engineering students.
+
+Parul University's scale and NAAC A++ standing is exactly where a flagship AI workshop makes sense. Students who automate things during college get shortlisted faster — and Parul's placement numbers would benefit directly.
+
+2-day workshop, real projects, MoU documentation. Free pilot for first batch — 30 students, no approval needed.
+
+Worth a quick call this week?</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tips-box">
+        <h4>Objection Handlers — Parul University</h4>
+        <div class="objection-grid">
+          <div class="obj-card"><div class="obj-q">"We already have many vendor tie-ups"</div><div class="obj-a">"Exactly why Parul is our first choice — you know how to onboard vendors fast. This is a specific AI automation skill workshop, 2 days, practical output. It won't clash with existing tie-ups."</div></div>
+          <div class="obj-card"><div class="obj-q">"What's the cost?"</div><div class="obj-a">"₹800–1000/student for 2 days. Typically collected as a workshop fee from students — no department budget needed. Or start with a free pilot of 30 students. Zero cost to evaluate."</div></div>
+          <div class="obj-card"><div class="obj-q">"We need committee approval"</div><div class="obj-a">"Free pilot needs zero approval. Once students demo real automation projects, you have everything the committee needs. We handle all paperwork after."</div></div>
+          <div class="obj-card"><div class="obj-q">"Send us a proposal"</div><div class="obj-a">"Will do — 10 minutes to understand your semester schedule so the proposal fits exactly? I'll have it to you same day."</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ===== LEAD 2: NAVRACHANA UNIVERSITY ===== -->
+  <div class="lead-block">
+    <div class="lead-header">
+      <div>
+        <div class="lead-num">Lead 02 · Score <span class="score-badge score-hot">7.0 🔥 High Priority</span></div>
+        <div class="lead-name">Navrachana University</div>
+        <div class="lead-firm">HOD CS/IT · Vadodara, Gujarat</div>
+      </div>
+      <div class="lead-contact-grid">
+        <div class="contact-item"><strong>Contact</strong>HOD CS/IT</div>
+        <div class="contact-item"><strong>Phone</strong>+91-265-2410000</div>
+        <div class="contact-item"><strong>Email</strong>info@nuv.ac.in</div>
+        <div class="contact-item"><strong>Website</strong>nuv.ac.in</div>
+        <div class="contact-item"><strong>Type</strong>Private — Entrepreneurship-First</div>
+        <div class="contact-item"><strong>LinkedIn</strong>linkedin.com/school/navrachana-university</div>
+      </div>
+    </div>
+    <div class="lead-body">
+      <div class="lead-profile">
+        <h4>Intel Profile</h4>
+        <div class="profile-grid">
+          <div class="profile-item"><strong>Why Hot</strong>Entrepreneurship-first culture, IBM/Microsoft tie-ups already in place, fast decisions</div>
+          <div class="profile-item"><strong>Entry Hook</strong>HOD CS/IT has direct budget authority for skill workshops</div>
+          <div class="profile-item"><strong>Best Angle</strong>Position as AI automation complement to existing IBM/MS tools — not a replacement</div>
+          <div class="profile-item"><strong>Speed</strong>Short decision chain — can close in 1–2 calls if right person reached</div>
+          <div class="profile-item"><strong>Opportunity</strong>Entrepreneurship culture = students will actually build things; great case study potential</div>
+          <div class="profile-item"><strong>Watch Out</strong>Don't compete with IBM/MS — frame ScaleSync as the practical automation layer on top</div>
+        </div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-email">📧</div>
+          <div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">2 variants — test A first, B if no reply by Day 14</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Variant A — Entrepreneurship Angle</span>
+            <div class="pitch-subject">Subject: <strong>AI Automation Workshop for Navrachana Students — Builds on IBM/MS Skills They Already Have</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [HOD Name],</span>
+
+I'm Anand from ScaleSync — a Gujarat-based AI automation agency.
+
+Navrachana's entrepreneurship focus and IBM/Microsoft partnerships tell me your students already understand enterprise tools. What they're missing is the automation layer — n8n, Make.com, LLM APIs — that connects those tools to build actual workflows.
+
+That's exactly what our 2-day workshop delivers.
+
+What we offer:
+→ 2-day intensive — practical automation projects students can deploy immediately
+→ ₹800–1000/student — MoU documentation, industry certificate included
+→ Builds on existing IBM/MS knowledge — not a replacement, a multiplier
+→ GitHub project portfolio per student for placement interviews
+
+Navrachana's decision cycle is fast — can we do a 15-minute call this week?
+
+— Anand Shrivastava
+ScaleSync AI Automation | scaleyukti.ai</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Variant B — Free Pilot Angle</span>
+            <div class="pitch-subject">Subject: <strong>Free AI automation pilot for 20 Navrachana students — see it before you commit</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
+
+We're a Gujarat AI agency running hands-on automation workshops at engineering colleges. Navrachana is one of our top Vadodara targets — entrepreneurship culture and IBM/MS partnerships are exactly the environment where automation skills compound fast.
+
+Simple offer: free pilot for 20 students. Real projects. No commitment. If it works for your students, we discuss a paid semester MoU. If not, zero cost.
+
+15-minute call to check calendar fit?
+
+— Anand | ScaleSync, scaleyukti.ai</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-phone">📞</div>
+          <div><div class="channel-label">Phone Script</div><div class="channel-sublabel">Day 5 if no email reply — under 90 seconds</div></div>
+        </div>
+        <div class="phone-script"><span class="script-note">[When answered]</span>
+"Hello — am I reaching the CS/IT department at Navrachana University?
+
+Hi, I'm Anand from ScaleSync — AI automation agency based in Gujarat. I sent an email earlier about a hands-on automation workshop for your engineering students.
+
+Navrachana's entrepreneurship focus and IBM/Microsoft tie-ups is exactly the environment where automation skills make a real difference for students.
+
+Is the HOD CS/IT available, or could you point me to the right person for industry workshop collaborations?
+
+<span class="script-note">[If they ask more]</span> 2-day practical workshop — n8n, Make.com, LLM APIs. ₹800–1000 per student, MoU included. Or we start free with 20 students. Under 15 minutes to align on calendar — that's all I need."</div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-linkedin">💼</div>
+          <div><div class="channel-label">LinkedIn Outreach</div><div class="channel-sublabel">Connection note + follow-up message variants</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Connection Note (150 chars)</span>
+            <div class="pitch-body">Hi [Name], I run AI automation workshops that complement IBM/MS skills at engineering colleges in Gujarat — emailed about a Navrachana tie-up. Happy to connect.</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Follow-up Message (after connect)</span>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
+
+Thanks for connecting. We're ScaleSync — Gujarat-based AI automation agency.
+
+Navrachana's IBM/MS partnerships are a great base. Our 2-day workshop adds the automation layer — n8n, Make.com, LLM APIs — so students can actually build workflows, not just consume enterprise tools.
+
+Students who automate during college stand out in placements and hackathons. Navrachana's entrepreneurship culture amplifies that.
+
+Free pilot for 20 students, zero commitment. Quick call this week?</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tips-box">
+        <h4>Objection Handlers — Navrachana University</h4>
+        <div class="objection-grid">
+          <div class="obj-card"><div class="obj-q">"We already have IBM/Microsoft programs"</div><div class="obj-a">"This complements them — IBM/MS teach enterprise tools; we teach automation workflows that connect those tools. Students get a multiplier effect on what they already know."</div></div>
+          <div class="obj-card"><div class="obj-q">"Is this certified?"</div><div class="obj-a">"Yes — MoU-backed, industry certificate included, GitHub project portfolio per student. All documentation we provide."</div></div>
+          <div class="obj-card"><div class="obj-q">"What's the student cost?"</div><div class="obj-a">"₹800–1000 for 2 days — typically workshop fee from students, no department budget. Free pilot for 20 students first if you want proof before anything paid."</div></div>
+          <div class="obj-card"><div class="obj-q">"Send proposal first"</div><div class="obj-a">"10 minutes on your semester calendar and I'll have a proposal same day — tailored to Navrachana's schedule, not a generic deck."</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ===== LEAD 3: GSFC UNIVERSITY ===== -->
+  <div class="lead-block">
+    <div class="lead-header">
+      <div>
+        <div class="lead-num">Lead 03 · Score <span class="score-badge score-warm">6.5 — Strong</span></div>
+        <div class="lead-name">GSFC University</div>
+        <div class="lead-firm">Training & Placement · Vadodara, Gujarat</div>
+      </div>
+      <div class="lead-contact-grid">
+        <div class="contact-item"><strong>Contact</strong>Training & Placement Head</div>
+        <div class="contact-item"><strong>Phone</strong>+91-265-6198600</div>
+        <div class="contact-item"><strong>Email</strong>admissions@gsfcuniversity.ac.in</div>
+        <div class="contact-item"><strong>Website</strong>gsfcuniversity.ac.in</div>
+        <div class="contact-item"><strong>Type</strong>Private (PSU-Backed)</div>
+        <div class="contact-item"><strong>LinkedIn</strong>linkedin.com/school/gsfcuniversity</div>
+      </div>
+    </div>
+    <div class="lead-body">
+      <div class="lead-profile">
+        <h4>Intel Profile</h4>
+        <div class="profile-grid">
+          <div class="profile-item"><strong>Why Strong</strong>GSFC Corporation backing = real procurement budget; active LI; CSR track record for workshops</div>
+          <div class="profile-item"><strong>Entry Hook</strong>T&P cell is fastest budget authority; CSR angle also works given PSU backing</div>
+          <div class="profile-item"><strong>Best Angle</strong>Frame as industry skill development under CSR mandate — GSFC Corp connection = documentation matters</div>
+          <div class="profile-item"><strong>Budget Reality</strong>PSU backing means committee approvals exist but budget isn't the blocker — process is</div>
+          <div class="profile-item"><strong>Opportunity</strong>CSR-funded workshop = no student fee needed; university pays directly</div>
+          <div class="profile-item"><strong>Watch Out</strong>Procurement may require formal quotation; prepare MoU draft early</div>
+        </div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-email">📧</div>
+          <div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">2 variants — test A first, B if no reply by Day 14</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Variant A — CSR/Industry Angle</span>
+            <div class="pitch-subject">Subject: <strong>AI Skill Development Workshop for GSFC University — Industry Partnership Proposal</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [T&P Head],</span>
+
+I'm Anand from ScaleSync — a Gujarat-based AI automation agency.
+
+GSFC University's PSU backing and CSR track record for skill development makes this a natural fit. We run 2-day hands-on AI automation workshops — covering n8n, Make.com, and LLM APIs — that give students deployable automation skills before they enter the industry.
+
+This maps directly to industry skill development mandates: students graduate with working automation projects, not just theoretical knowledge.
+
+What we offer:
+→ 2-day intensive — real automation projects per student
+→ MoU-backed, industry certificate, GitHub project portfolio
+→ Can be structured as a CSR/skill development program — documentation provided
+→ ₹800–1000/student or CSR-funded batch pricing available
+
+Can we schedule 15 minutes to align on semester timing?
+
+— Anand Shrivastava
+ScaleSync AI Automation | scaleyukti.ai</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Variant B — Free Pilot Angle</span>
+            <div class="pitch-subject">Subject: <strong>Free AI workshop pilot for GSFC University — evaluate before committing</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
+
+Gujarat-based AI agency here — ScaleSync. We're running automation workshops at engineering colleges in the state.
+
+For GSFC University, we'd like to offer a free pilot batch of 20 students. You evaluate the quality — real automation projects with LLM APIs and workflow tools — before any paid MoU conversation.
+
+If it works, we structure a formal skill development partnership. If not, zero cost to you.
+
+15-minute call to check calendar fit?
+
+— Anand | ScaleSync, scaleyukti.ai</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-phone">📞</div>
+          <div><div class="channel-label">Phone Script</div><div class="channel-sublabel">Day 5 if no email reply — under 90 seconds</div></div>
+        </div>
+        <div class="phone-script"><span class="script-note">[When answered]</span>
+"Hello — am I reaching the Training & Placement office at GSFC University?
+
+Hi, I'm Anand from ScaleSync — AI automation agency in Gujarat. I emailed earlier about a skill development workshop partnership for your engineering students.
+
+Given GSFC University's industry backing, we think this is a strong fit — 2-day AI automation workshop, fully delivered by our team, MoU documentation ready.
+
+Is the T&P Head available for a 15-minute call this week?
+
+<span class="script-note">[If they ask more]</span> ₹800–1000/student — or we structure it as a CSR-funded program. Free pilot of 20 students to evaluate first. All paperwork provided."</div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-linkedin">💼</div>
+          <div><div class="channel-label">LinkedIn Outreach</div><div class="channel-sublabel">Connection note + follow-up message variants</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Connection Note (150 chars)</span>
+            <div class="pitch-body">Hi [Name], Gujarat-based AI agency here — emailed about an AI automation workshop partnership for GSFC University students. Happy to connect.</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Follow-up Message (after connect)</span>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
+
+Thanks for connecting. ScaleSync — Gujarat AI automation agency.
+
+GSFC University's PSU backing and industry orientation make this a strong fit for a formal skill development partnership. We run 2-day workshops — n8n, Make.com, LLM APIs — students graduate with working automation projects.
+
+Can be structured as CSR-funded program, all documentation included. Free pilot for 20 students to evaluate first.
+
+Quick call this week?</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tips-box">
+        <h4>Objection Handlers — GSFC University</h4>
+        <div class="objection-grid">
+          <div class="obj-card"><div class="obj-q">"We need committee approval for vendors"</div><div class="obj-a">"Understood — free pilot needs zero approval. 20 students, 2 days. Once you have student project demos, committee approval becomes straightforward. We provide all MoU documentation after."</div></div>
+          <div class="obj-card"><div class="obj-q">"What's the cost structure?"</div><div class="obj-a">"₹800–1000/student for regular batch. Or CSR-funded batch pricing if you want to use the GSFC Corp CSR mandate — we structure the documentation to match. Free pilot first either way."</div></div>
+          <div class="obj-card"><div class="obj-q">"Send us a formal quotation"</div><div class="obj-a">"10 minutes on your semester calendar — I'll send a formal quotation and draft MoU same day, tailored to GSFC University's procurement format."</div></div>
+          <div class="obj-card"><div class="obj-q">"We prefer established training vendors"</div><div class="obj-a">"Fair — free pilot removes all risk. You evaluate our quality before any paper is signed. If we don't deliver, there's no obligation whatsoever."</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ===== LEAD 4: ITM SLS BARODA ===== -->
+  <div class="lead-block">
+    <div class="lead-header">
+      <div>
+        <div class="lead-num">Lead 04 · Score <span class="score-badge score-warm">6.5 — Strong</span></div>
+        <div class="lead-name">ITM SLS Baroda University</div>
+        <div class="lead-firm">Academics / Innovation Cell · Vadodara, Gujarat</div>
+      </div>
+      <div class="lead-contact-grid">
+        <div class="contact-item"><strong>Contact</strong>Academics / Innovation Cell Head</div>
+        <div class="contact-item"><strong>Phone</strong>+91-265-2480854</div>
+        <div class="contact-item"><strong>Email</strong>info@itmbu.com</div>
+        <div class="contact-item"><strong>Website</strong>itmbu.com</div>
+        <div class="contact-item"><strong>Type</strong>Private — ITM Group</div>
+        <div class="contact-item"><strong>LinkedIn</strong>linkedin.com/school/itmbu</div>
+      </div>
+    </div>
+    <div class="lead-body">
+      <div class="lead-profile">
+        <h4>Intel Profile</h4>
+        <div class="profile-grid">
+          <div class="profile-item"><strong>Why Strong</strong>ITM Group brand recognition, industry-linked SLS branding, open to paid training vendors</div>
+          <div class="profile-item"><strong>Entry Hook</strong>Academics/Innovation cell handles external workshop tie-ups directly</div>
+          <div class="profile-item"><strong>Best Angle</strong>Industry-linked university = automation skills are a direct placement differentiator</div>
+          <div class="profile-item"><strong>ITM Group</strong>Good relationship = potential for other ITM Group institutions across India</div>
+          <div class="profile-item"><strong>Opportunity</strong>Active LI page — reach out to Innovation Cell contact via LinkedIn first</div>
+          <div class="profile-item"><strong>Watch Out</strong>Confirm Innovation Cell head name before call — generic "info@" email needs follow-up</div>
+        </div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-email">📧</div>
+          <div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">2 variants — test A first, B if no reply by Day 14</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Variant A — Industry Placement Angle</span>
+            <div class="pitch-subject">Subject: <strong>AI Automation Workshop for ITM SLS Baroda — Placement-Ready Skills in 2 Days</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Innovation Cell Head],</span>
+
+I'm Anand from ScaleSync — a Gujarat-based AI automation agency.
+
+ITM SLS Baroda's industry-linked focus and reputation for placement outcomes makes this a strong fit. We run 2-day hands-on AI automation workshops — n8n, Make.com, LLM APIs — that students can demo in any interview or hackathon immediately.
+
+What we offer:
+→ 2-day intensive — automation projects students deploy on Day 2
+→ ₹800–1000/student — MoU documentation, industry certificate included
+→ Zero prep from your faculty — fully delivered by our team
+→ GitHub portfolio per student — concrete placement differentiator
+
+ITM Group's brand + ScaleSync's AI automation expertise = strong industry partnership story. Worth a 15-minute call?
+
+— Anand Shrivastava
+ScaleSync AI Automation | scaleyukti.ai</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Variant B — Free Pilot Angle</span>
+            <div class="pitch-subject">Subject: <strong>Free AI workshop pilot for 20 ITM SLS Baroda students — no commitment</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
+
+Gujarat AI agency here — ScaleSync. We run automation workshops for engineering students.
+
+For ITM SLS Baroda, we're offering a free pilot batch of 20 students — real projects, practical automation skills, zero commitment from your end.
+
+If students rate it well and you see placement value, we discuss a paid MoU. If not, zero cost.
+
+15-minute call to check calendar fit?
+
+— Anand | ScaleSync, scaleyukti.ai</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-phone">📞</div>
+          <div><div class="channel-label">Phone Script</div><div class="channel-sublabel">Day 5 if no email reply — under 90 seconds</div></div>
+        </div>
+        <div class="phone-script"><span class="script-note">[When answered]</span>
+"Hello — am I reaching the Innovation Cell or Academics office at ITM SLS Baroda?
+
+Hi, I'm Anand from ScaleSync — AI automation agency in Gujarat. I sent an email about a hands-on automation workshop for your engineering students.
+
+ITM Group's industry-linked culture and placement focus is exactly the fit for what we run — 2-day AI automation workshops students can demo in interviews.
+
+Is there a right person for industry workshop partnerships I should speak with?
+
+<span class="script-note">[If they ask more]</span> ₹800–1000/student, MoU documentation included. Or free pilot for 20 students — zero commitment. 15-minute call with the right person this week?"</div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-linkedin">💼</div>
+          <div><div class="channel-label">LinkedIn Outreach</div><div class="channel-sublabel">Connection note + follow-up message variants</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Connection Note (150 chars)</span>
+            <div class="pitch-body">Hi [Name], Gujarat AI agency here — emailed about an AI automation workshop partnership for ITM SLS Baroda students. Happy to connect.</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Follow-up Message (after connect)</span>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
+
+Thanks for connecting. We're ScaleSync — Gujarat-based AI automation agency.
+
+ITM SLS Baroda's industry-linked brand and placement focus makes this a direct fit. 2-day AI automation workshop — n8n, Make.com, LLM APIs — students walk out with a GitHub project portfolio for interviews.
+
+MoU documentation included. Free pilot for 20 students first, zero approval needed.
+
+Quick call this week?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ===== LEAD 5: NEOTECH ===== -->
+  <div class="lead-block">
+    <div class="lead-header">
+      <div>
+        <div class="lead-num">Lead 05 · Score <span class="score-badge score-warm">6.0 — Good</span></div>
+        <div class="lead-name">Neotech Technical Campus</div>
+        <div class="lead-firm">T&P / Innovation · Vadodara, Gujarat</div>
+      </div>
+      <div class="lead-contact-grid">
+        <div class="contact-item"><strong>Contact</strong>T&P / Innovation Head</div>
+        <div class="contact-item"><strong>Phone</strong>+91-265-2481013</div>
+        <div class="contact-item"><strong>Email</strong>info@neotechcampus.com</div>
+        <div class="contact-item"><strong>Website</strong>neotechcampus.com</div>
+        <div class="contact-item"><strong>Type</strong>Private — Growing Campus</div>
+        <div class="contact-item"><strong>LinkedIn</strong>linkedin.com/company/neotech-technical-campus</div>
+      </div>
+    </div>
+    <div class="lead-body">
+      <div class="lead-profile">
+        <h4>Intel Profile</h4>
+        <div class="profile-grid">
+          <div class="profile-item"><strong>Why Good</strong>Active company LI, growing campus, responds to industry outreach</div>
+          <div class="profile-item"><strong>Entry Hook</strong>T&P cell handles external workshop tie-ups</div>
+          <div class="profile-item"><strong>Best Angle</strong>Growing campus = eager for industry partnerships that build credibility</div>
+          <div class="profile-item"><strong>Opportunity</strong>Easier yes than established institutions — less process, more flexibility</div>
+          <div class="profile-item"><strong>Watch Out</strong>Smaller campus = smaller batch size; price accordingly</div>
+        </div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-email">📧</div>
+          <div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">2 variants — test A first, B if no reply by Day 14</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Variant A — Growth Angle</span>
+            <div class="pitch-subject">Subject: <strong>AI Automation Workshop for Neotech Students — Industry Partnership That Builds Campus Credibility</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [T&P Head],</span>
+
+I'm Anand from ScaleSync — a Gujarat-based AI automation agency.
+
+Growing campuses like Neotech get the fastest ROI from industry partnerships — a documented AI automation workshop with MoU builds credibility with students, parents, and placement recruiters simultaneously.
+
+What we offer:
+→ 2-day hands-on workshop — n8n, Make.com, LLM APIs — real projects
+→ ₹800–1000/student, MoU documentation, industry certificate
+→ Zero faculty prep — fully delivered by our team
+→ GitHub portfolio per student for placement interviews
+
+Quick 15-minute call to align on semester timing?
+
+— Anand Shrivastava
+ScaleSync AI Automation | scaleyukti.ai</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Variant B — Free Pilot Angle</span>
+            <div class="pitch-subject">Subject: <strong>Free AI workshop pilot for Neotech — zero commitment, real projects</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
+
+Gujarat AI agency here — ScaleSync. We run practical automation workshops for engineering students.
+
+Free pilot offer for Neotech: 20 students, 2 days, real AI automation projects. You evaluate the quality before any paid commitment.
+
+If it works, we structure a paid MoU. If not, zero cost.
+
+15-minute call?
+
+— Anand | ScaleSync, scaleyukti.ai</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-phone">📞</div>
+          <div><div class="channel-label">Phone Script</div><div class="channel-sublabel">Day 5 if no email reply — under 90 seconds</div></div>
+        </div>
+        <div class="phone-script"><span class="script-note">[When answered]</span>
+"Hello — am I reaching the T&P or Innovation Cell at Neotech Technical Campus?
+
+Hi, I'm Anand from ScaleSync — AI automation agency in Gujarat. Sent an email about a hands-on AI workshop partnership for your students.
+
+Growing campuses like Neotech benefit most from industry workshop tie-ups — builds placement credibility fast. We run 2-day automation workshops, fully delivered by our team.
+
+Is the T&P head available for a quick 15-minute call this week?
+
+<span class="script-note">[If they ask more]</span> ₹800–1000/student, MoU documentation included. Or free pilot for 20 students — see the quality before committing."</div>
+      </div>
+
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-linkedin">💼</div>
+          <div><div class="channel-label">LinkedIn Outreach</div><div class="channel-sublabel">Connection note + follow-up message variants</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Connection Note (150 chars)</span>
+            <div class="pitch-body">Hi [Name], Gujarat AI agency here — emailed about an AI automation workshop for Neotech Technical Campus students. Happy to connect.</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Follow-up Message (after connect)</span>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
+
+Thanks for connecting. We're ScaleSync — Gujarat AI automation agency.
+
+Neotech's growing campus profile is exactly where our industry workshop partnership creates the most visible impact — MoU-backed, documented, real student projects.
+
+2-day workshop. Free pilot for 20 students, zero commitment. Quick call this week?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ===== LEADS 6-10: COMPACT ===== -->
+  <div class="lead-block">
+    <div class="lead-header">
+      <div>
+        <div class="lead-num">Lead 06 · Score <span class="score-badge score-cold">5.5 — Moderate</span></div>
+        <div class="lead-name">VIE – Vadodara Institute of Engineering</div>
+        <div class="lead-firm">HOD IT/CSE · Vadodara, Gujarat</div>
+      </div>
+      <div class="lead-contact-grid">
+        <div class="contact-item"><strong>Contact</strong>HOD IT/CSE</div>
+        <div class="contact-item"><strong>Phone</strong>+91-265-2331111</div>
+        <div class="contact-item"><strong>Email</strong>info@vie.edu.in</div>
+        <div class="contact-item"><strong>Website</strong>vie.edu.in</div>
+        <div class="contact-item"><strong>Type</strong>Private — No LI Page</div>
+        <div class="contact-item"><strong>LinkedIn</strong>Not found — use email/phone only</div>
+      </div>
+    </div>
+    <div class="lead-body">
+      <div class="lead-profile">
+        <h4>Intel Profile</h4>
+        <div class="profile-grid">
+          <div class="profile-item"><strong>Why Moderate</strong>Moderate event history; no LinkedIn page found — limited digital footprint</div>
+          <div class="profile-item"><strong>Approach</strong>Email + WhatsApp direct; skip LinkedIn entirely for this lead</div>
+          <div class="profile-item"><strong>Best Angle</strong>Keep it simple — 2-day workshop, real projects, free pilot first</div>
+          <div class="profile-item"><strong>Watch Out</strong>No LI presence = harder to verify decision-maker; call to confirm contact</div>
+        </div>
+      </div>
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-email">📧</div>
+          <div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">2 variants</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Variant A — Direct Skill Angle</span>
+            <div class="pitch-subject">Subject: <strong>AI Automation Workshop for VIE Students — 2-Day Practical Program</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [HOD Name],</span>
+
+I'm Anand from ScaleSync — Gujarat-based AI automation agency.
+
+We run 2-day hands-on AI automation workshops for engineering students — n8n, Make.com, LLM APIs — real deployable projects, not theory.
+
+₹800–1000/student. MoU documentation. Industry certificate. Zero faculty prep.
+
+15-minute call to check semester timing?
+
+— Anand | ScaleSync, scaleyukti.ai</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Variant B — Free Pilot</span>
+            <div class="pitch-subject">Subject: <strong>Free AI workshop pilot for VIE — 20 students, zero commitment</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
+
+Free pilot offer — 20 VIE students, 2-day AI automation workshop, real projects, zero commitment.
+
+If students find value, we discuss a paid MoU. If not, no cost.
+
+Quick call?
+
+— Anand | ScaleSync, scaleyukti.ai</div>
+          </div>
+        </div>
+      </div>
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-phone">📞</div>
+          <div><div class="channel-label">Phone Script</div><div class="channel-sublabel">Day 3 — primary channel given no LI</div></div>
+        </div>
+        <div class="phone-script">"Hello — am I reaching the IT/CSE department at VIE Vadodara?
+
+Hi, I'm Anand from ScaleSync — AI automation agency in Gujarat. We run 2-day hands-on AI workshops for engineering students — real projects, MoU documentation.
+
+Is the HOD IT/CSE available? I need 15 minutes on workshop calendar fit.
+
+<span class="script-note">[If HOD unavailable]</span> Could I get their direct number or WhatsApp? Easier than email for scheduling."</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lead-block">
+    <div class="lead-header">
+      <div>
+        <div class="lead-num">Lead 07 · Score <span class="score-badge score-cold">5.5 — Moderate</span></div>
+        <div class="lead-name">Sigma Institute of Technology</div>
+        <div class="lead-firm">Training Head · Vadodara, Gujarat</div>
+      </div>
+      <div class="lead-contact-grid">
+        <div class="contact-item"><strong>Contact</strong>Training Head</div>
+        <div class="contact-item"><strong>Phone</strong>+91-265-2341411</div>
+        <div class="contact-item"><strong>Email</strong>info@sigma.edu.in</div>
+        <div class="contact-item"><strong>Website</strong>sigma.edu.in</div>
+        <div class="contact-item"><strong>Type</strong>Private — Mid-Tier</div>
+        <div class="contact-item"><strong>LinkedIn</strong>linkedin.com/company/sigma-institute-of-technology-</div>
+      </div>
+    </div>
+    <div class="lead-body">
+      <div class="lead-profile">
+        <h4>Intel Profile</h4>
+        <div class="profile-grid">
+          <div class="profile-item"><strong>Why Moderate</strong>Company LI present; mid-tier private; open to paid workshops but needs budget clarity upfront</div>
+          <div class="profile-item"><strong>Approach</strong>Lead with free pilot — removes budget objection entirely</div>
+          <div class="profile-item"><strong>Best Angle</strong>Training head = placement-focused; frame workshop as placement differentiator</div>
+          <div class="profile-item"><strong>Watch Out</strong>Budget constraints common at mid-tier; free pilot is the entry strategy here</div>
+        </div>
+      </div>
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-email">📧</div>
+          <div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">2 variants</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Variant A — Placement Angle</span>
+            <div class="pitch-subject">Subject: <strong>AI Automation Workshop for Sigma Students — Placement Differentiator in 2 Days</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Training Head],</span>
+
+I'm Anand from ScaleSync — Gujarat-based AI automation agency.
+
+Students who can demo working automation projects in interviews get shortlisted. Our 2-day workshop gives Sigma students exactly that — n8n, Make.com, LLM API projects, GitHub portfolio.
+
+₹800–1000/student. MoU-backed. Zero faculty prep. Or free pilot for 20 students first.
+
+15-minute call?
+
+— Anand | ScaleSync, scaleyukti.ai</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Variant B — Free Pilot</span>
+            <div class="pitch-subject">Subject: <strong>Free AI workshop for 20 Sigma students — evaluate before any payment</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
+
+No budget needed to evaluate — free pilot for 20 Sigma students, 2-day AI automation workshop, real projects.
+
+If you see placement value in what students build, we discuss paid MoU. Zero risk.
+
+Quick call?
+
+— Anand | ScaleSync, scaleyukti.ai</div>
+          </div>
+        </div>
+      </div>
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-phone">📞</div>
+          <div><div class="channel-label">Phone Script</div></div>
+        </div>
+        <div class="phone-script">"Hello — am I reaching Sigma Institute's Training department?
+
+Hi, I'm Anand from ScaleSync — Gujarat AI automation agency. Emailed about a hands-on AI workshop for your students.
+
+We're offering a free pilot for 20 students — no budget needed, no commitment. Real automation projects, MoU documentation after if it works.
+
+Is the Training Head available for 15 minutes this week?"</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lead-block">
+    <div class="lead-header">
+      <div>
+        <div class="lead-num">Lead 08 · Score <span class="score-badge score-cold">5.0 — Research Culture</span></div>
+        <div class="lead-name">IIIT Vadodara</div>
+        <div class="lead-firm">Director / CSE HOD · Vadodara, Gujarat</div>
+      </div>
+      <div class="lead-contact-grid">
+        <div class="contact-item"><strong>Contact</strong>Director / CSE HOD</div>
+        <div class="contact-item"><strong>Phone</strong>+91-265-2330707</div>
+        <div class="contact-item"><strong>Email</strong>info@iiitvadodara.ac.in</div>
+        <div class="contact-item"><strong>Website</strong>iiitvadodara.ac.in</div>
+        <div class="contact-item"><strong>Type</strong>Govt (NIT-like) — IIT Bombay Mentored</div>
+        <div class="contact-item"><strong>LinkedIn</strong>linkedin.com/school/iiitvadodara</div>
+      </div>
+    </div>
+    <div class="lead-body">
+      <div class="lead-profile">
+        <h4>Intel Profile</h4>
+        <div class="profile-grid">
+          <div class="profile-item"><strong>Why Lower</strong>Research-first culture; IIT Bombay mentored; open to events but slow to commit to vendor workshops</div>
+          <div class="profile-item"><strong>Right Angle</strong>Frame as AI/ML curriculum supplement — research collaboration, not vendor pitch</div>
+          <div class="profile-item"><strong>Approach</strong>Target CSE HOD (academic) not admin — research credibility opens doors here</div>
+          <div class="profile-item"><strong>Watch Out</strong>Don't lead with price or MoU — lead with technical content and curriculum fit</div>
+        </div>
+      </div>
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-email">📧</div>
+          <div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">2 variants</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Variant A — Curriculum/Research Angle</span>
+            <div class="pitch-subject">Subject: <strong>AI Automation Curriculum Supplement for IIIT Vadodara CSE Students — Industry Application Layer</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [CSE HOD],</span>
+
+I'm Anand from ScaleSync — Gujarat-based applied AI agency.
+
+IIIT Vadodara's AI/ML track produces strong researchers. The gap we see: students who understand theory but haven't built production automation workflows — n8n, Make.com, LLM API integrations — that industry uses daily.
+
+Our 2-day workshop fills exactly that gap. Not a replacement for your curriculum — a practical application layer students can add to their portfolio before placements.
+
+IIT Bombay mentorship + applied automation skills = placement and research outcomes both improve.
+
+Worth a 15-minute discussion on curriculum fit?
+
+— Anand Shrivastava
+ScaleSync AI Automation | scaleyukti.ai</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Variant B — Guest Workshop Angle</span>
+            <div class="pitch-subject">Subject: <strong>Guest Workshop Proposal — Applied AI Automation for IIIT Vadodara Students</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Name],</span>
+
+Guest workshop proposal for IIIT Vadodara: Applied AI Automation — covering production LLM API integration, n8n/Make.com workflows, and real deployment patterns.
+
+Structured as a guest lecture series or intensive weekend workshop — fits your academic calendar without disrupting coursework.
+
+Free to evaluate — 2-hour session first, full 2-day workshop if it resonates with students.
+
+15-minute call to discuss?
+
+— Anand | ScaleSync, scaleyukti.ai</div>
+          </div>
+        </div>
+      </div>
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-phone">📞</div>
+          <div><div class="channel-label">Phone Script</div></div>
+        </div>
+        <div class="phone-script">"Hello — am I reaching the CSE department at IIIT Vadodara?
+
+Hi, I'm Anand from ScaleSync — applied AI agency in Gujarat. I'm reaching out about a guest workshop on applied AI automation for your students — practical LLM API workflows that complement your AI/ML curriculum.
+
+Is the CSE HOD or Director available for a brief discussion on curriculum fit?
+
+<span class="script-note">[If they ask more]</span> 2-day applied workshop — production patterns, not theory. Framed as industry application of what students already learn in your AI/ML track. Free evaluation session available."</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lead-block">
+    <div class="lead-header">
+      <div>
+        <div class="lead-num">Lead 09 · Score <span class="score-badge score-cold">4.5 — Low Priority</span></div>
+        <div class="lead-name">MSU Baroda — Faculty of Technology & Engineering</div>
+        <div class="lead-firm">Dean, Tech & Engineering · Vadodara, Gujarat</div>
+      </div>
+      <div class="lead-contact-grid">
+        <div class="contact-item"><strong>Contact</strong>Dean, Tech & Engineering</div>
+        <div class="contact-item"><strong>Phone</strong>+91-265-2795555</div>
+        <div class="contact-item"><strong>Email</strong>registrar@msubaroda.ac.in</div>
+        <div class="contact-item"><strong>Website</strong>msubaroda.ac.in</div>
+        <div class="contact-item"><strong>Type</strong>Govt (University)</div>
+        <div class="contact-item"><strong>LinkedIn</strong>linkedin.com/school/the-maharaja-sayajirao-university-of-baroda</div>
+      </div>
+    </div>
+    <div class="lead-body">
+      <div class="lead-profile">
+        <h4>Intel Profile</h4>
+        <div class="profile-grid">
+          <div class="profile-item"><strong>Why Low</strong>Heritage govt university; slow procurement; bureaucratic decision chain</div>
+          <div class="profile-item"><strong>Approach</strong>Free pilot only — no paid pitch until internal champion identified</div>
+          <div class="profile-item"><strong>Entry Hook</strong>Target FoT (Faculty of Technology) department head directly, not central admin</div>
+          <div class="profile-item"><strong>Watch Out</strong>Registrar email = admin, not decision-maker for workshops; find department HOD</div>
+        </div>
+      </div>
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-email">📧</div>
+          <div><div class="channel-label">Email Outreach</div><div class="channel-sublabel">Free pilot only — no paid pitch yet</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Variant A — Free Pilot Only</span>
+            <div class="pitch-subject">Subject: <strong>Complimentary AI Workshop Pilot for MSU Baroda FoT Students — No Cost, No Commitment</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Respected Dean,</span>
+
+I'm Anand from ScaleSync — a Gujarat-based applied AI agency.
+
+We'd like to offer a complimentary AI automation workshop for 20 students at the Faculty of Technology & Engineering — covering practical LLM API workflows and automation tools that complement current curriculum.
+
+No cost. No commitment. Student feedback will determine if a formal collaboration makes sense.
+
+Would this fit any upcoming break or workshop period in your academic calendar?
+
+— Anand Shrivastava
+ScaleSync AI Automation | scaleyukti.ai</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Variant B — Department HOD Route</span>
+            <div class="pitch-subject">Subject: <strong>AI Automation Guest Workshop for CSE/IT Students — Complimentary Pilot Session</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Respected HOD,</span>
+
+Reaching out from ScaleSync — Gujarat AI agency — about a complimentary guest workshop for your CSE/IT students on applied AI automation (n8n, LLM APIs, workflow tools).
+
+Free 2-hour pilot session first. If students find value, we can discuss a full 2-day workshop format.
+
+No formal proposal needed at this stage — just a conversation on calendar fit.
+
+— Anand | ScaleSync, scaleyukti.ai</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lead-block">
+    <div class="lead-header">
+      <div>
+        <div class="lead-num">Lead 10 · Score <span class="score-badge score-cold">4.0 — Verify First</span></div>
+        <div class="lead-name">NRTU — Narnarayan Shastri Techno University</div>
+        <div class="lead-firm">Principal / Dean · Vadodara, Gujarat</div>
+      </div>
+      <div class="lead-contact-grid">
+        <div class="contact-item"><strong>Contact</strong>Principal / Dean</div>
+        <div class="contact-item"><strong>Phone</strong>+91-265-2221111</div>
+        <div class="contact-item"><strong>Email</strong>info@nrtu.ac.in</div>
+        <div class="contact-item"><strong>Website</strong>nrtu.ac.in</div>
+        <div class="contact-item"><strong>Type</strong>Private</div>
+        <div class="contact-item"><strong>LinkedIn</strong>Only program-level page found — verify before outreach</div>
+      </div>
+    </div>
+    <div class="lead-body">
+      <div class="lead-profile">
+        <h4>Intel Profile</h4>
+        <div class="profile-grid">
+          <div class="profile-item"><strong>Why Lowest</strong>Limited public presence; only program-level LI found; contact existence unverified</div>
+          <div class="profile-item"><strong>Action Required</strong>Verify phone/email deliverability before any outreach spend</div>
+          <div class="profile-item"><strong>Approach</strong>Single phone call to verify contact — if valid, treat like VIE (email + phone, no LI)</div>
+          <div class="profile-item"><strong>Priority</strong>Last in queue — do not spend time here until top 5 are contacted</div>
+        </div>
+      </div>
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-phone">📞</div>
+          <div><div class="channel-label">Verification Call First</div><div class="channel-sublabel">Confirm contact exists before email</div></div>
+        </div>
+        <div class="phone-script">"Hello — am I reaching NRTU Vadodara?
+
+Hi, I'm verifying contact details for an industry workshop partnership. Could you confirm — is there a Training Cell or Innovation Cell head I should reach out to regarding external workshop tie-ups?
+
+<span class="script-note">[If yes]</span> Great — could I get their direct email or number? I'll send a formal proposal.
+<span class="script-note">[If no relevant contact found]</span> Thank you — I'll follow up when the right department is available."</div>
+      </div>
+      <div class="channel-block">
+        <div class="channel-header">
+          <div class="channel-icon ch-email">📧</div>
+          <div><div class="channel-label">Email (only after phone verification)</div></div>
+        </div>
+        <div class="variant-pair">
+          <div class="variant-card">
+            <span class="variant-label v-a">Variant A — After Verification</span>
+            <div class="pitch-subject">Subject: <strong>AI Workshop Pilot for NRTU Students — Free, No Commitment</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Verified Contact],</span>
+
+Spoke with your office — following up on our AI automation workshop pilot offer for NRTU students.
+
+Free pilot: 20 students, 2-day workshop, real automation projects. Zero commitment. If it works, we discuss a paid MoU.
+
+15-minute call?
+
+— Anand | ScaleSync, scaleyukti.ai</div>
+          </div>
+          <div class="variant-card">
+            <span class="variant-label v-b">Variant B — Cold Email Fallback</span>
+            <div class="pitch-subject">Subject: <strong>Free AI Workshop Pilot for NRTU — Gujarat Agency Partnership</strong></div>
+            <div class="pitch-body"><span class="pitch-hook">Hi [Principal / Dean],</span>
+
+ScaleSync — Gujarat AI automation agency — offering a free 2-day AI workshop pilot for 20 NRTU students. No cost, no commitment, real projects.
+
+Worth a 15-minute call?
+
+— Anand | ScaleSync, scaleyukti.ai</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  ⚡ ScaleSync AI Automation Agency · scaleyukti.ai · Ahmedabad, Gujarat, India<br>
+  Vadodara Engineering College Pitch Decks 2026 · Internal Use Only · Generated April 2026
+</footer>
+
+</body>
+</html>
